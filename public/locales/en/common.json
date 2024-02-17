@@ -1,0 +1,22 @@
+{
+    "navbar": [
+        {
+            "id": 1,
+            "name": "About",
+            "target": "#about_section"
+        },{
+            "id": 2,
+            "name": "Projects",
+            "target": "#projects_section"
+        }
+    ],
+    "theme": {
+        "dark": "Dark",
+        "light": "Light",
+        "system": "System"
+    },
+    "language": {
+        "en": "English",
+        "es": "Spanish"
+    }
+}

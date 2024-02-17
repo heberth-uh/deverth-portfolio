@@ -1,0 +1,44 @@
+{
+    "hero": {
+        "subtitle": "Hola, mi nombre es",
+        "title": "Heberth,<br/><1>desarrollador</1><br/>web front-end<br/>",
+        "description": "Ingeniero en sistemas computacionales,<br/>apasionado por la creación y diseño<br/> de sitios web geniales."
+    },
+    "about": {
+        "title": "Sobre mi",
+        "subtitle": "Conoce más <1/><2>sobre mí</2>",
+        "content": "Programador apasionado por la creación de sitios web en el lado del <1>front-end</1> y con conocimiento sólido en el <2>back-end</2>. Soy un desarrollador autodidacta en constante aprendizaje sobre las nuevas tecnologías y amante del <3>diseño</3> y maquetado de interfaces.<br/><br/>Me gusta tomar nuevos retos y poner en práctica mis capacidades a la vez de aprender más cosas y adquirir nuevas aptitudes."
+    },
+    "skills": {
+        "title": "Habilidades",
+        "sections": {
+            "other": "Otras habilidades"
+        },
+        "skills": {
+            "responsive": "Diseño adaptable"
+        }
+    },
+    "experience": {
+        "title": "Experiencias",
+        "companies": "Empresas a las que les he añadido valor",
+        "experiences": [
+            {
+                "id": 1,
+                "education": false,
+                "period": "Marzo 2022 - Actualidad",
+                "duration": "2 años",
+                "title": "Desarrollador Odoo Fullstack",
+                "subtitle": "Toh Soluciones Digitales",
+                "description": "Desarrollador Odoo especializado en la creación de sistemas personalizados para empresas que optan por utilizar (o ya utilizan) Odoo como su solución ERP. Desarrollo de módulos utilizando <strong>Python, Javascprit, Bootstrap CSS y XML/HTML</strong> para el diseño de la lógica de negocio de las empresas, <strong>integración de APIS</strong>, <strong>creación de Landing Pages</strong> y diseño/rediseño de la interfaz gráfica de Odoo."
+            },{
+                "id": 2,
+                "education": true,
+                "period": "Agosto 2017 - Enero 2022",
+                "duration": "4 años y medio",
+                "title": "Ingeniería en Sistemas Computacionales",
+                "subtitle": "TECNM Campus Motul",
+                "description": "Graduado y titulado como Ingeniero en Sistemas computacionales. En mi trayecto como estudiante fui parte de proyectos relevantes como SIGLAM Gestor de inventario , Armonía - Test de Salud mental y Punto de venta LaGranjitaa donde puse en práctica la <strong>programación web</strong>. Realicé mi <strong>residencia profesional</strong> en la empresa Toh Soluciones Digitales bajo el proyecto Dashboard de administración de proyectos, donde después de 5 meses de prácticas, fui contratado."
+            }
+        ]
+    }
+}

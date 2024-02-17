@@ -1,0 +1,44 @@
+{
+    "hero": {
+        "subtitle": "Hi, my name is",
+        "title": "Heberth, <br/>Front-end website<br/><1>developer</1>",
+        "description": "I am a computer system engineer; I like building <br/>websites with beautiful interfaces and enhancing <br/>user experiences."
+    },
+    "about": {
+        "title": "About me",
+        "subtitle": "Know more <1/><2>about me</2>",
+        "content": "Passionated programmer about creating websites in the <1>Front-end</1> side and with a solid knowledge in the <2>Back-end</2> side. I am a autodidact developer on constant learning about new technologies and a lover of <3>designing</3> and sketching of interfaces.<br/><br/>I like taking new challenges and putting my capabilities into practice at the time I learn new things and getting new skills."
+    },
+    "skills": {
+        "title": "Skills",
+        "sections": {
+            "other": "Other skills"
+        },
+        "skills": {
+            "responsive": "Adaptive design"
+        }
+    },
+    "experience": {
+        "title": "Experience",
+        "companies": "Companies where I contributed value",
+        "experiences": [
+            {
+                "id": 1,
+                "education": false,
+                "period": "February 2022 - Present",
+                "duration": "2 years",
+                "title": "Fullstack Odoo Developer",
+                "subtitle": "Toh Soluciones Digitales",
+                "description": "Odoo developer specialized on creating custom systems for companies that use (or want to use) Odoo as their ERP solution. Modules development using <strong>Python, Javascript, Bootstrap CSS and XML/HTML</strong> for the business logic designing of the companies, <strong>API integrations</strong>, <strong>Landing Pages building</strong> and desing/re-desing Odoo graphic interface."
+            },{
+                "id": 2,
+                "education": true,
+                "period": "August 2017 - January 2022",
+                "duration": "4 years and a half",
+                "title": "Computer Science Engineering",
+                "subtitle": "TECNM Campus Motul",
+                "description": "Graduated and titled as Computer Science Engineer. In my journey as student I was part of relevant projects for the university such as SIGLAM Inventory management, Armonía - Mental heath test and LaGranjita Point of Sale, where I put into practice the <strong>web programming</strong>. I did my <strong>professional residence</strong> in the company Toh Soluciones Dgitales under the project \"Project Management Dashboard\" where after 5 months doing the residence there, they hired me."
+            }
+        ]
+    }
+}

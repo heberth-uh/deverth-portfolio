@@ -1,0 +1,22 @@
+{
+    "navbar": [
+        {
+            "id": 1,
+            "name": "Sobre mí",
+            "target": "#about_section"
+        },{
+            "id": 2,
+            "name": "Proyectos",
+            "target": "#projects_section"
+        }
+    ],
+    "theme": {
+        "dark": "Oscuro",
+        "light": "Claro",
+        "system": "Sistema"
+    },
+    "language": {
+        "en": "Inglés",
+        "es": "Español"
+    }
+}
