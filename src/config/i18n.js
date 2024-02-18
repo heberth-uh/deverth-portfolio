@@ -21,7 +21,8 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     fallbackLng: 'en',
-    debug: true,
+    ns: ['common','home'],
+    debug: false,
     returnObjects: true,
     interpolation: {
       escapeValue: true, // not needed for react as it escapes by default
