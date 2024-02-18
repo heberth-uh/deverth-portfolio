@@ -2,9 +2,9 @@ import { MdSchool } from "react-icons/md";
 import { MdOutlineWork } from "react-icons/md";
 import { Trans } from "react-i18next";
 
-function ItemExperience( { id, period, duration, title, subtitle, description, isSchool } ) {
+function ItemExperience( { period, duration, title, subtitle, description, isSchool } ) {
     return (
-        <li className="mb-2" id={id}>
+        <>
             <div className="relative flexitems-center" id="lineIndicator">
                 <span className="absolute -top-1 left-[-0.7rem] text-gray-100 dark:text-sky-200 text-sm md:text-base">
                     <span className="bg-sky-900 dark:bg-sky-900 p-1 md:p-[0.30rem] rounded-full inline-block">
@@ -23,7 +23,7 @@ function ItemExperience( { id, period, duration, title, subtitle, description, i
                     />
                 </p>
             </div>
-        </li>
+        </>
     )
 }
 

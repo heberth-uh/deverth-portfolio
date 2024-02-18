@@ -27,15 +27,16 @@ function Experience() {
                 <article className="flex justify-center items-center my-10 md:my-20">
                     <ul className="w-full lg:w-4/5 xl:w-2/3">
                         {experiences.map( exp => (
-                            <ItemExperience
-                                id={exp.id}
-                                period={exp.period}
-                                duration={exp.duration}
-                                title={exp.title}
-                                subtitle={exp.subtitle}
-                                description={exp.description}
-                                isSchool={exp.education}
-                            />
+                            <li className="mb-2" key={exp.id}>
+                                <ItemExperience
+                                    period={exp.period}
+                                    duration={exp.duration}
+                                    title={exp.title}
+                                    subtitle={exp.subtitle}
+                                    description={exp.description}
+                                    isSchool={exp.education}
+                                />
+                            </li>
                         ))}
                     </ul>
                 </article>
