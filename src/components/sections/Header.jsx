@@ -1,11 +1,14 @@
 import { useContext } from "react"
 import { Context } from '../../context/Context'
 import { useTranslation } from "react-i18next";
-
+// Components
 import ThemeSelection from "../widgets/ThemeSelection";
 import LangSelection from "../widgets/LangSelection";
-
+// Ions
 import { FiMenu, FiX } from "react-icons/fi";
+// SVG
+import deverth from '../../../public/Deverth.svg';
+import deverthDark from '../../../public/Deverth-dark.svg';
 
 function Header() {
 
@@ -38,11 +41,8 @@ function Header() {
         <div className="sticky bg-white dark:bg-darker-blue border-b-[2px] border-slate-100/75 dark:border-slate-900 top-0 left-0 w-full py-3 md:py-3 z-30">
             <div className="container relative mx-auto px-6 xl:px-0 flex justify-between font-body">
                 <a href="" className="flex self-center">
-                    <h3 className="text-content-blue dark:text-white font-extrabold text-xl md:text-2xl">
-                        <span className="text-sky-blue">D</span>
-                        everth
-                        <span className="text-sky-blue">.</span>
-                    </h3>
+                    <img src={deverth} className="h-8 lg:h-10 dark:hidden"/>
+                    <img src={deverthDark} className="h-8 lg:h-10 hidden dark:block"/>
                 </a>
                 <div className="md:flex hidden items-center">
                     {/* Render navbar items */}
