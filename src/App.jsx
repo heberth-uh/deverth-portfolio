@@ -2,8 +2,9 @@ import './App.css'
 import Header from './components/sections/Header'
 import Hero from './components/sections/Hero'
 import About from './components/sections/About'
-import Skills from './components/sections/Skills'
 import Experience from './components/sections/Experience'
+import Projects from './components/sections/Projects'
+import Skills from './components/sections/Skills'
 import Footer from './components/sections/Footer'
 
 function App() {
@@ -19,8 +20,9 @@ function App() {
         <Header/>
         <Hero/>
         <About/>
-        <Skills/>
         <Experience/>
+        <Projects/>
+        <Skills/>
         <Footer/>
     </div>
   )

@@ -34,7 +34,7 @@ function Header() {
                     <LangSelection/>
                 </div>
             </div>
-        )   
+        )
     }
 
     return (
@@ -54,7 +54,7 @@ function Header() {
                 </div>
                 {/* Navbar burger */}
                 {
-                    !toggleShowMenu ? "" : 
+                    !toggleShowMenu ? "" :
                     <div  className="absolute top-full left-0 right-0 md:hidden" tabIndex="-1">
                         <div className="fixed bottom-0 right-0 left-0 top-[52px] z-[40] backdrop-blur bg-gray-300/30 dark:bg-transparent" onClick={ () => setToggleShowMenu(false) }/>
                         <div className="absolute top-full left-0 right-0 p-4 mt-4 mx-6 rounded-xl z-[50] bg-gray-50 dark:bg-slate-800 drop-shadow-2xl dark:drop-shadow-4xl md:hidden">

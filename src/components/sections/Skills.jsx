@@ -1,4 +1,4 @@
-import { Translation, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 import html_svg from "../../../public/images/skills/html-icon.svg";
 import css_svg from "../../../public/images/skills/css-icon.svg";;

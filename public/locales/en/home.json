@@ -40,5 +40,14 @@
                 "description": "Graduated and titled as Computer Science Engineer. In my journey as student I was part of relevant projects for the university such as SIGLAM Inventory management, Armonía - Mental heath test and LaGranjita Point of Sale, where I put into practice the <strong>web programming</strong>. I did my <strong>professional residence</strong> in the company Toh Soluciones Dgitales under the project \"Project Management Dashboard\" where after 5 months doing the residence there, they hired me."
             }
         ]
+    },
+    "projects": {
+        "title": "PROJECTS",
+        "btnCode": "Code",
+        "footballClub": {
+            "title": "Football Club Landing Page",
+            "description": "A template to organice the information about your football club where you can show the incoming matches, table positions, squad, etc.",
+            "url": "https://github.com/heberth-uh/football-club"
+        }
     }
 }
