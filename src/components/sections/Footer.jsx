@@ -1,14 +1,15 @@
 import { useContext } from "react";
+import { useTranslation } from "react-i18next";
 import { Context } from "../../context/Context";
+// Icons
 import { GrFacebook, GrLinkedin } from "react-icons/gr";
 import { GrGithub } from "react-icons/gr";
 import { GrInstagram } from "react-icons/gr";
-import { useTranslation } from "react-i18next";
 
 function Footer(){
-    const { t, i18n } = useTranslation(['common','footer']);
+    const { t } = useTranslation(['common','footer']);
     const navbar = t('navbar');
-    const { menuItems } = useContext(Context);
+    const { social } = useContext(Context);
     return (
         <div className="bg-gray-100 dark:bg-dark-blue">
             <div className="container mx-auto pt-14 pb-5 px-6 xl:px-0 font-body">
@@ -26,27 +27,15 @@ function Footer(){
                         <p className="text-slate-500 dark:text-slate-600 mb-1 text-sm lg:text-base">{t('footer:socialMedia')}</p>
                         <ul className="text-content-blue dark:text-slate-500 text-sm">
                             <li className="hover:text-slate-400 cursor-pointer mb-1">
-                                <a href="" className="flex gap-2 items-center">
+                                <a href={social.linkedin} className="flex gap-2 items-center">
                                     <span><GrLinkedin/></span>
                                     <span>Linkedin</span>
                                 </a>
                             </li>
                             <li className="hover:text-slate-400 cursor-pointer mb-1">
-                                <a href="" className="flex gap-2 items-center">
+                                <a href={social.github} className="flex gap-2 items-center">
                                     <span><GrGithub/></span>
                                     <span>Github</span>
-                                </a>
-                            </li>
-                            <li className="hover:text-slate-400 cursor-pointer mb-1">
-                                <a href="" className="flex gap-2 items-center">
-                                    <span><GrFacebook/></span>
-                                    <span>Facebook</span>
-                                </a>
-                            </li>
-                            <li className="hover:text-slate-400 cursor-pointer mb-1">
-                                <a href="" className="flex gap-2 items-center">
-                                    <span><GrInstagram/></span>
-                                    <span>Instragram</span>
                                 </a>
                             </li>
                         </ul>

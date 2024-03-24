@@ -1,24 +1,27 @@
-import { createContext, useState, useEffect, useRef } from "react"
+import { createContext, useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { menus_items as menu_items_data } from '../data/menu_items.js'
+import { menus_items as menu_items_data } from '../data/menu_items.js';
+import { social_links as social_data } from '../data/social_links.js';
 
 export const Context = createContext();
 
 export function ContextProvider(props) {
 
-    const [menuItems, setMenuItems] = useState([])
-    const [toggleShowMenu, setToggleShowMenu] = useState(false)
-    const [toggleThemeSelection, setToggleThemeSelection] = useState(false)
-    const [toggleLangSelection, setToggleLangSelection] = useState(false)
-    const [theme, setTheme] = useState(localStorage.theme)
+    const [menuItems, setMenuItems] = useState([]);
+    const [social, setSocial] = useState({});
+    const [toggleShowMenu, setToggleShowMenu] = useState(false);
+    const [toggleThemeSelection, setToggleThemeSelection] = useState(false);
+    const [toggleLangSelection, setToggleLangSelection] = useState(false);
+    const [theme, setTheme] = useState(localStorage.theme);
     const [themeMode, setThemeMode] = useState(!localStorage.theme ? 'system' : localStorage.theme);
     const themeDropdownRef = useRef();
     const langDropdownRef = useRef();
-    const { t } = useTranslation('common')
+    const { t } = useTranslation('common');
 
     
     useEffect(() => {
         setMenuItems(menu_items_data);
+        setSocial(social_data);
         const html = window.document.documentElement;
 
         if (toggleShowMenu) {
@@ -58,6 +61,7 @@ export function ContextProvider(props) {
     return (
         <Context.Provider value={{
             menuItems,
+            social,
             toggleShowMenu, setToggleShowMenu,
             toggleThemeSelection, setToggleThemeSelection,
             toggleLangSelection, setToggleLangSelection,
