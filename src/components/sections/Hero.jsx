@@ -33,10 +33,10 @@ function Hero() {
                             <Trans i18nKey={ t('hero.description')}/>
                         </p>
                         <div className="flex justify-start gap-3 my-4 text-sm md:text-base">
-                            <a href={social.linkedin} className='border border-spacing-2 border-content-blue dark:border-gray-300 rounded-full py-1 px-3 cursor-pointer flex items-center justify-center gap-1 bg-gray-50 dark:bg-gray-800 text-content-blue hover:text-content-blue/90 dark:text-gray-300 hover:dark:text-gray-100 hover:scale-110 duration-150 ease-in-out'>
+                            <a href={social.github} target='_blank' className='border border-spacing-2 border-content-blue dark:border-gray-300 rounded-full py-1 px-3 cursor-pointer flex items-center justify-center gap-1 bg-gray-50 dark:bg-gray-800 text-content-blue hover:text-content-blue/90 dark:text-gray-300 hover:dark:text-gray-100 hover:scale-110 duration-150 ease-in-out'>
                                 <FaGithub className='text-lg'/> GitHub
                             </a>
-                            <a href={social.github} className='border border-spacing-2 border-content-blue dark:border-gray-300 rounded-full py-1 px-3 cursor-pointer flex items-center justify-center gap-1 bg-gray-50 dark:bg-gray-800 text-content-blue hover:text-content-blue/90 dark:text-gray-300 hover:dark:text-gray-100 hover:scale-110 duration-150 ease-in-out'>
+                            <a href={social.linkedin} target='_blank' className='border border-spacing-2 border-content-blue dark:border-gray-300 rounded-full py-1 px-3 cursor-pointer flex items-center justify-center gap-1 bg-gray-50 dark:bg-gray-800 text-content-blue hover:text-content-blue/90 dark:text-gray-300 hover:dark:text-gray-100 hover:scale-110 duration-150 ease-in-out'>
                                 <FaLinkedin className='text-lg'/> LinkedIn
                             </a>
                         </div>
