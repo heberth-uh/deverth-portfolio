@@ -2,7 +2,8 @@
     "hero": {
         "subtitle": "Hi, my name is",
         "title": "Heberth, <br/>Front-end website<br/><1>developer</1>",
-        "description": "I am a computer system engineer; I like building <br/>websites with beautiful interfaces and enhancing <br/>user experiences."
+        "description": "I am a computer system engineer; I like building <br/>websites with beautiful interfaces and enhancing <br/>user experiences.",
+        "button_start": "Let's get started!"
     },
     "about": {
         "title": "About me",
@@ -26,7 +27,7 @@
                 "id": 1,
                 "education": false,
                 "period": "February 2022 - Present",
-                "duration": "2 years",
+                "duration": "",
                 "title": "Fullstack Odoo Developer",
                 "subtitle": "Toh Soluciones Digitales",
                 "description": "Odoo developer specialized on creating custom systems for companies that use (or want to use) Odoo as their ERP solution. Modules development using <strong>Python, Javascript, Bootstrap CSS and XML/HTML</strong> for the business logic designing of the companies, <strong>API integrations</strong>, <strong>Landing Pages building</strong> and desing/re-desing Odoo graphic interface."
@@ -37,7 +38,12 @@
                 "duration": "4 years and a half",
                 "title": "Computer Science Engineering",
                 "subtitle": "TECNM Campus Motul",
-                "description": "Graduated and titled as Computer Science Engineer. In my journey as student I was part of relevant projects for the university such as SIGLAM Inventory management, Armonía - Mental heath test and LaGranjita Point of Sale, where I put into practice the <strong>web programming</strong>. I did my <strong>professional residence</strong> in the company Toh Soluciones Dgitales under the project \"Project Management Dashboard\" where after 5 months doing the residence there, they hired me."
+                "description": "Graduated and titled as Computer Science Engineer. In my journey as student I was part of relevant projects for the university such as <a1>Armonía - Mental Health Test</a1> and <a2>LaGranjita Point of Sale</a2>, where I put into practice the <strong>web programming</strong>. I did my <strong>professional residence</strong> in the company Toh Soluciones Dgitales under the project <a3>\"Project Management Dashboard\"</a3> where after 5 months doing the residence there, they hired me.",
+                "links": [
+                    "https://github.com/MarkoTF/armonia",
+                    "https://github.com/heberth-uh/lagranjita",
+                    "https://apps.odoo/toh_soluciones/"
+                ]
             }
         ]
     },

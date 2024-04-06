@@ -40,7 +40,7 @@ function Header() {
     return (
         <div className="sticky bg-white dark:bg-darker-blue border-b-[2px] border-slate-100/75 dark:border-slate-900 top-0 left-0 w-full py-3 md:py-3 z-30">
             <div className="container relative mx-auto px-6 xl:px-0 flex justify-between font-body">
-                <a href="" className="flex self-center">
+                <a href="/" className="flex self-center">
                     <img src={deverth} className="h-8 lg:h-10 dark:hidden"/>
                     <img src={deverthDark} className="h-8 lg:h-10 hidden dark:block"/>
                 </a>

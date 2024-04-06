@@ -2,7 +2,7 @@ import { MdSchool } from "react-icons/md";
 import { MdOutlineWork } from "react-icons/md";
 import { Trans } from "react-i18next";
 
-function ItemExperience( { period, duration, title, subtitle, description, isSchool } ) {
+function ItemExperience( { period, duration, title, subtitle, description, isSchool, links } ) {
     return (
         <>
             <div className="relative flexitems-center" id="lineIndicator">
@@ -11,7 +11,7 @@ function ItemExperience( { period, duration, title, subtitle, description, isSch
                         { isSchool ? <MdSchool/> : <MdOutlineWork/> }
                     </span>
                 </span>
-                <p className="ps-[18px] md:ps-8 font-extralight text-slate-400 text-xs md:text-sm">{period} ({duration})</p>
+                <p className="ps-[18px] md:ps-8 font-extralight text-slate-400 text-xs md:text-sm">{period} {duration ? `(${(duration)})` : ''}</p>
             </div>
             <div className="border-s-2 border-sky-900 ps-4 pb-10 md:ps-8">
                 <h3 className="flex items-center flex-wrap lg:flex-nowrap sm:gap-1 md:gap-1 lg:gap-3 my-2 leading-5">
@@ -19,7 +19,17 @@ function ItemExperience( { period, duration, title, subtitle, description, isSch
                     <span className="dark:text-gray-100 text-content-blue text-content font-bold dmd:text-lg">{subtitle}</span>
                 </h3>
                 <p className="text-content-blue dark:text-gray-300 text-sm md:text-base font-light">
-                    <Trans i18nKey={description} components={{'strong': <strong className="dark:text-gray-200" />}}
+                    <Trans i18nKey={description}
+                            components={
+                                // For each link from links array, we are adding a key on the object initialized
+                                // inside the reducer to get an object with the links to replace the <ax> tag on description translation
+                                links.reduce( (acc, link, index) => ({
+                                    ...acc,
+                                    [`a${index+1}`] : <a key={index+1} href={link} className="underline" target="_blank"/>
+                                }),
+                                { 'strong': <strong className="dark:text-gray-200 font-medium" /> }
+                            )
+                        }
                     />
                 </p>
             </div>

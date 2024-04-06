@@ -24,7 +24,7 @@ function Experience() {
             <div className="container relative mx-auto px-6 xl:px-0 py-16 lg:py-6 font-body">
                 <TitleSection name={t('experience.title')}/>
 
-                <article className="flex justify-center items-center my-10 md:my-20">
+                <div className="flex justify-center items-center my-10 md:my-20">
                     <ul className="w-full lg:w-4/5 xl:w-2/3">
                         {experiences.map( exp => (
                             <li className="mb-2" key={exp.id}>
@@ -35,12 +35,13 @@ function Experience() {
                                     subtitle={exp.subtitle}
                                     description={exp.description}
                                     isSchool={exp.education}
+                                    links={exp.links || []}
                                 />
                             </li>
                         ))}
                     </ul>
-                </article>
-                <article className="py-0 mx-center container">
+                </div>
+                <div className="py-0 mx-center container">
                     <h4 className="text-lg md:text-2xl text-center">
                         <span className="uppercase text-transparent bg-clip-text bg-gradient-to-r from-sky-blue via-sky-blue to-cyan-300 dark:from-cyan-400 dark:via-cyan-300 dark:to-cyan-100">
                             {t('experience.companies')}
@@ -54,7 +55,7 @@ function Experience() {
                         <img src={company3} className='w-44 h-auto md:h-16 md:w-auto z-[5] dark:hidden' />
                         <img src={company3White} className='w-44 h-auto md:h-16 md:w-auto z-[5] hidden dark:block' />
                     </div>
-                </article>
+                </div>
             </div>
         </div>
     )
