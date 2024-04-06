@@ -51,7 +51,9 @@ function Hero() {
             <div className='relative w-full z-[6]'>
                 <div className='flex flex-col items-center'>
                     <a href='#about_section' className="mb-4 text-sm md:text-base cursor-pointer text-content-blue dark:text-gray-400 hover:text-sky-blue dark:hover:text-gray-300">
-                        Let&apos;s get started
+                        {
+                            t('hero.button_start')
+                        }
                         {/* la clase animate-bounce hace que se sobreponga el elemento span sobre el menú de Móvil, al abrir menú, se hace invisible, esto soluciona el bug */}
                         <span className={`flex flex-col items-center text-3xl animate-bounce ${toggleShowMenu ? 'invisible' : ''}`}>
                             <BiChevronDown/>

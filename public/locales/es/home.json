@@ -2,7 +2,9 @@
     "hero": {
         "subtitle": "Hola, mi nombre es",
         "title": "Heberth,<br/><1>desarrollador</1><br/>web front-end<br/>",
-        "description": "Ingeniero en sistemas computacionales,<br/>apasionado por la creación y diseño<br/> de sitios web geniales."
+        "description": "Ingeniero en sistemas computacionales,<br/>apasionado por la creación y diseño<br/> de sitios web geniales.",
+        "button_start": "¡Empecemos!"
+
     },
     "about": {
         "title": "Sobre mi",
@@ -26,7 +28,7 @@
                 "id": 1,
                 "education": false,
                 "period": "Marzo 2022 - Actualidad",
-                "duration": "2 años",
+                "duration": "",
                 "title": "Desarrollador Odoo Fullstack",
                 "subtitle": "Toh Soluciones Digitales",
                 "description": "Desarrollador Odoo especializado en la creación de sistemas personalizados para empresas que optan por utilizar (o ya utilizan) Odoo como su solución ERP. Desarrollo de módulos utilizando <strong>Python, Javascprit, Bootstrap CSS y XML/HTML</strong> para el diseño de la lógica de negocio de las empresas, <strong>integración de APIS</strong>, <strong>creación de Landing Pages</strong> y diseño/rediseño de la interfaz gráfica de Odoo."
@@ -37,7 +39,12 @@
                 "duration": "4 años y medio",
                 "title": "Ingeniería en Sistemas Computacionales",
                 "subtitle": "TECNM Campus Motul",
-                "description": "Graduado y titulado como Ingeniero en Sistemas computacionales. En mi trayecto como estudiante fui parte de proyectos relevantes como SIGLAM Gestor de inventario , Armonía - Test de Salud mental y Punto de venta LaGranjitaa donde puse en práctica la <strong>programación web</strong>. Realicé mi <strong>residencia profesional</strong> en la empresa Toh Soluciones Digitales bajo el proyecto Dashboard de administración de proyectos, donde después de 5 meses de prácticas, fui contratado."
+                "description": "Graduado y titulado como Ingeniero en Sistemas computacionales. En mi trayecto como estudiante fui parte de proyectos relevantes como <a1>Armonía - Test de Salud Mental</a1> y <a2>Punto de venta LaGranjitaa</a2> donde puse en práctica la <strong>programación web</strong>. Realicé mi <strong>residencia profesional</strong> en la empresa Toh Soluciones Digitales bajo el proyecto <a3>\"Dashboard de Administración de Proyectos\"</a3>, donde después de 5 meses de prácticas, fui contratado.",
+                "links": [
+                    "https://github.com/MarkoTF/armonia",
+                    "https://github.com/heberth-uh/lagranjita",
+                    "https://apps.odoo/toh_soluciones/"
+                ]
             }
         ]
     },
