@@ -39,11 +39,10 @@
                 "duration": "4 años y medio",
                 "title": "Ingeniería en Sistemas Computacionales",
                 "subtitle": "TECNM Campus Motul",
-                "description": "Graduado y titulado como Ingeniero en Sistemas computacionales. En mi trayecto como estudiante fui parte de proyectos relevantes como <a1>Armonía - Test de Salud Mental</a1> y <a2>Punto de venta LaGranjitaa</a2> donde puse en práctica la <strong>programación web</strong>. Realicé mi <strong>residencia profesional</strong> en la empresa Toh Soluciones Digitales bajo el proyecto <a3>\"Dashboard de Administración de Proyectos\"</a3>, donde después de 5 meses de prácticas, fui contratado.",
+                "description": "Graduado y titulado como Ingeniero en Sistemas computacionales. En mi trayecto como estudiante fui parte de proyectos relevantes como <a1>Punto de venta LaGranjita</a1> donde puse en práctica la <strong>programación web</strong>. Realicé mi <strong>residencia profesional</strong> en la empresa Toh Soluciones Digitales bajo el proyecto <a2>\"Dashboard de Administración de Proyectos\"</a2>, donde después de 5 meses de prácticas, fui contratado.",
                 "links": [
-                    "https://github.com/MarkoTF/armonia",
                     "https://github.com/heberth-uh/lagranjita",
-                    "https://apps.odoo/toh_soluciones/"
+                    "https://apps.odoo.com/apps/modules/14.0/toh_admin_proyecto/"
                 ]
             }
         ]
