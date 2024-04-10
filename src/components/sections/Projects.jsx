@@ -39,8 +39,9 @@ function Projects() {
                 <TitleSection name={t('projects.title')} />
 
                 <div className="flex flex-col items-center my-10">
-                    {projects.map( project => (
+                    {projects.map( (project, index) => (
                         <ProjectCard
+                            key={index}
                             title={t(`projects.${project.name}.title`)}
                             description={t(`projects.${project.name}.description`)}
                             img={project.img}

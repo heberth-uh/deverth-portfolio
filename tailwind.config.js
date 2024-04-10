@@ -23,8 +23,8 @@ export default {
                 ]
             },
             backgroundImage: {
-                'hero-pattern': 'url("./src/images/squares-pattern.svg")',
-                'hero-pattern-dark': 'url("./src/images/squares-pattern-dark.svg")',
+                'hero-pattern': 'url("/src/images/squares-pattern.svg")',
+                'hero-pattern-dark': 'url("/src/images/squares-pattern-dark.svg")',
             },
             backgroundSize: {
                 'y-middle': '100% 50%',
