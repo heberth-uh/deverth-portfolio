@@ -27,13 +27,13 @@ function Footer(){
                         <p className="text-slate-500 dark:text-slate-600 mb-1 text-sm lg:text-base">{t('footer:socialMedia')}</p>
                         <ul className="text-content-blue dark:text-slate-500 text-sm">
                             <li className="hover:text-slate-400 cursor-pointer mb-1">
-                                <a href={social.linkedin} className="flex gap-2 items-center">
+                                <a href={social.linkedin} target="_blank" className="flex gap-2 items-center">
                                     <span><GrLinkedin/></span>
                                     <span>Linkedin</span>
                                 </a>
                             </li>
                             <li className="hover:text-slate-400 cursor-pointer mb-1">
-                                <a href={social.github} className="flex gap-2 items-center">
+                                <a href={social.github} target="_blank" className="flex gap-2 items-center">
                                     <span><GrGithub/></span>
                                     <span>Github</span>
                                 </a>
