@@ -1,4 +1,5 @@
 export const social_links = {
-    "linkedin": 'https://mx.linkedin.com/in/heberthuh',
+    "linkedin": 'https://www.linkedin.com/in/heberth-uh/',
     "github": 'https://github.com/heberth-uh',
+    "email": 'heberth.uh@gmail.com'
 }

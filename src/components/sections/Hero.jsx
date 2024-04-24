@@ -7,6 +7,7 @@ import hero_img from '../../../public/images/hero_img.png';
 import { BiChevronDown } from 'react-icons/bi';
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
+import { MdMail } from "react-icons/md";
 
 function Hero() {
     
@@ -34,10 +35,13 @@ function Hero() {
                         </p>
                         <div className="flex justify-start gap-3 my-4 text-sm md:text-base">
                             <a href={social.github} target='_blank' className='border border-spacing-2 border-content-blue dark:border-gray-300 rounded-full py-1 px-3 cursor-pointer flex items-center justify-center gap-1 bg-gray-50 dark:bg-gray-800 text-content-blue hover:text-content-blue/90 dark:text-gray-300 hover:dark:text-gray-100 hover:scale-110 duration-150 ease-in-out'>
-                                <FaGithub className='text-lg'/> GitHub
+                                <FaGithub className='text-lg'/> <span className='pt-[1.5px]'>GitHub</span>
                             </a>
                             <a href={social.linkedin} target='_blank' className='border border-spacing-2 border-content-blue dark:border-gray-300 rounded-full py-1 px-3 cursor-pointer flex items-center justify-center gap-1 bg-gray-50 dark:bg-gray-800 text-content-blue hover:text-content-blue/90 dark:text-gray-300 hover:dark:text-gray-100 hover:scale-110 duration-150 ease-in-out'>
-                                <FaLinkedin className='text-lg'/> LinkedIn
+                                <FaLinkedin className='text-lg'/> <span className='pt-[1.5px]'>LinkedIn</span>
+                            </a>
+                            <a href={`mailto:${social.email}`} className='border border-spacing-2 border-content-blue dark:border-gray-300 rounded-full py-1 px-3 cursor-pointer flex items-center justify-center gap-1 bg-gray-50 dark:bg-gray-800 text-content-blue hover:text-content-blue/90 dark:text-gray-300 hover:dark:text-gray-100 hover:scale-110 duration-150 ease-in-out'>
+                                <MdMail className='text-lg'/> <span className='pt-[1.5px]'>{t('hero.button_contact')}</span>
                             </a>
                         </div>
                     </div>
