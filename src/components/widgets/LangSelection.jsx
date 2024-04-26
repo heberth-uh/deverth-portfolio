@@ -11,7 +11,7 @@ import { PiTranslate } from "react-icons/pi";
 
 function LangSelection() {
 
-    const { langDropdownRef, toggleLangSelection, setToggleLangSelection } = useContext(Context);
+    const { language, langDropdownRef, toggleLangSelection, setToggleLangSelection } = useContext(Context);
     const { t, i18n } = useTranslation('common');
 
     function handleToggleLangSelection() {
@@ -27,7 +27,7 @@ function LangSelection() {
     // Get the string classes for the selected theme
     function classSelectedItem(lang) {
         var stringClass = ''
-        if (lang === i18n.language) {
+        if (lang === language) {
             stringClass = 'dark:text-sky-blue text-sky-blue dark:bg-cyan-500/5 bg-cyan-50 font-semibold'
             return stringClass
         } else {
@@ -47,11 +47,11 @@ function LangSelection() {
                 <ul className="bg-white drop-shadow-sm dark:bg-slate-800 border border-gray-100 dark:border-gray-700 md:dark:border-gray-800 rounded-lg cursor-pointer overflow-hidden">
                     <li className={`text-content-blue dark:text-gray-300 hover:bg-slate-100 dark:hover:bg-slate-700 ${classSelectedItem('en')} px-5 py-3 flex gap-2 items-center justify-between`}
                     onClick={ () => handleChangeLanguage('en')}>
-                        <span>{t('language.en')}</span><FaCheck className={`text-xs ${i18n.language === 'en' ? '' : 'hidden'}`}/>
+                        <span>{t('language.en')}</span><FaCheck className={`text-xs ${language === 'en' ? '' : 'hidden'}`}/>
                     </li>
                     <li className={`text-content-blue dark:text-gray-300 hover:bg-slate-100 dark:hover:bg-slate-700 ${classSelectedItem('es')} px-5 py-3 flex gap-2 items-center justify-between`}
                     onClick={ () => handleChangeLanguage('es')}>
-                        <span>{t('language.es')}</span><FaCheck className={`text-xs ${i18n.language === 'es' ? '' : 'hidden'}`}/>
+                        <span>{t('language.es')}</span><FaCheck className={`text-xs ${language === 'es' ? '' : 'hidden'}`}/>
                     </li>
                 </ul>
             </div>

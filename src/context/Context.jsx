@@ -16,9 +16,10 @@ export function ContextProvider(props) {
     const [toggleLangSelection, setToggleLangSelection] = useState(false);
     const [theme, setTheme] = useState(localStorage.theme);
     const [themeMode, setThemeMode] = useState(!localStorage.theme ? 'system' : localStorage.theme);
+    const [language, setLanguage] = useState('en')
     const themeDropdownRef = useRef();
     const langDropdownRef = useRef();
-    const { t } = useTranslation('common');
+    const { t, i18n } = useTranslation('common');
 
     useEffect(() => {
         setMenuItems(menu_items_data);
@@ -36,6 +37,10 @@ export function ContextProvider(props) {
         if (themeMode === 'system' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             setTheme('dark')
         }
+
+        // Get the default lenguage
+        const lang = i18n.language.includes('en') ? 'en' : 'es'
+        setLanguage(lang);
 
         // Set the class in the HTML tag according the current theme
         html.classList.remove('light', 'dark');
@@ -69,6 +74,7 @@ export function ContextProvider(props) {
             toggleThemeSelection, setToggleThemeSelection,
             toggleLangSelection, setToggleLangSelection,
             theme, setTheme,
+            language,
             themeMode, setThemeMode,
             themeDropdownRef,
             langDropdownRef
