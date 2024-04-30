@@ -21,14 +21,12 @@ function ThemeSelection () {
         setTheme('dark')
         setThemeMode('dark')
         setToggleThemeSelection(false)
-        console.log('click dark')
     }
     function handleLightMode() {
         localStorage.theme = 'light'
         setTheme('light')
         setThemeMode('light')
         setToggleThemeSelection(false)
-        console.log('click light')
     }
     function handleSystemMode() {
         setThemeMode('system')
@@ -40,14 +38,12 @@ function ThemeSelection () {
         } else {
             setTheme('light')
         }
-        console.log('click system')
     }
 
     // Listener event to catch the theme when the system theme is switched
     if (themeMode == 'system') {
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
             const newColorScheme = event.matches ? "dark" : "light";
-            console.log('newColorScheme:', newColorScheme);
             setTheme(newColorScheme)
         });
     }

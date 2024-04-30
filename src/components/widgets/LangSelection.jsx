@@ -11,7 +11,7 @@ import { PiTranslate } from "react-icons/pi";
 
 function LangSelection() {
 
-    const { language, langDropdownRef, toggleLangSelection, setToggleLangSelection } = useContext(Context);
+    const { language, setLanguage, langDropdownRef, toggleLangSelection, setToggleLangSelection } = useContext(Context);
     const { t, i18n } = useTranslation('common');
 
     function handleToggleLangSelection() {
@@ -21,6 +21,7 @@ function LangSelection() {
     // Method to change the language with i18next
     function handleChangeLanguage(lang) {
         i18n.changeLanguage(lang);
+        setLanguage(lang);
         setToggleLangSelection(false);
     }
 
@@ -40,7 +41,7 @@ function LangSelection() {
             <div className={`rounded-lg text-xl cursor-pointer mmd:mx-4 px-3 md:px-2 py-2 border-[1px] md:border-0 border-gray-300 dark:border-gray-500 md:bg-none hover:bg-slate-100 dark:hover:bg-slate-900 transition duration-150`}
             onClick={ () => handleToggleLangSelection()}>
                 <span className="flex items-center justify-center gap-3 md:gap-2 text-xl text-content-blue dark:text-gray-400">
-                    <TfiWorld/><span className="uppercase text-base">{i18n.language === 'en' ? 'EN' : 'ES'}</span>
+                    <PiTranslateBold/><span className="uppercase text-base">{language === 'en' ? 'EN' : 'ES'}</span>
                 </span>
             </div>
             <div className={`absolute top-full right-0 md:right-0 md:mt-5 z-[90] min-w-full ${toggleLangSelection ? '' : 'hidden'}`}>

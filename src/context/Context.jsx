@@ -63,7 +63,7 @@ export function ContextProvider(props) {
             document.removeEventListener('mousedown', handleClickOutside);
         }
 
-    }, [toggleShowMenu, theme])
+    }, [toggleShowMenu, theme, language])
 
     return (
         <Context.Provider value={{
@@ -74,7 +74,7 @@ export function ContextProvider(props) {
             toggleThemeSelection, setToggleThemeSelection,
             toggleLangSelection, setToggleLangSelection,
             theme, setTheme,
-            language,
+            language, setLanguage,
             themeMode, setThemeMode,
             themeDropdownRef,
             langDropdownRef
