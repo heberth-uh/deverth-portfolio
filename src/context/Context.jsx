@@ -48,11 +48,11 @@ export function ContextProvider(props) {
 
         let handleClickOutside = (e) => {
             // Catch clicking outside the theme dropdown selection
-            if (!themeDropdownRef.current.contains(e.target)){
+            if (toggleThemeSelection && !themeDropdownRef.current.contains(e.target)){
                 setToggleThemeSelection(false);
             }
             // Catch clicking outside the language dropdown selection
-            if (!langDropdownRef.current.contains(e.target)){
+            if (toggleLangSelection && !langDropdownRef.current.contains(e.target)){
                 setToggleLangSelection(false);
             }
         }
