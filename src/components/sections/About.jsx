@@ -8,7 +8,7 @@ function About() {
 
   return (
     <div className="bg-gray-50 dark:bg-dark-blue" id="about_section">
-        <div className="container mx-auto py-16 px-6 xl:px-0 font-body">
+        <div className="container mx-auto py-16 xl:py-32 px-6 xl:px-0 font-body">
             <TitleSection name={t('about.title')}/>
 
             <div className='flex-row md:flex items-center gap-6 my-10'>

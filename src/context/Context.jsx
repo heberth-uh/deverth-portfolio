@@ -1,6 +1,5 @@
 import { createContext, useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { menus_items as menu_items_data } from '../data/menu_items.js';
 import { social_links as social_data } from '../data/social_links.js';
 import { projects_links } from '../data/projects.js';
 
@@ -8,7 +7,6 @@ export const Context = createContext();
 
 export function ContextProvider(props) {
 
-    const [menuItems, setMenuItems] = useState([]);
     const [social, setSocial] = useState({});
     const [projects, setProjects] = useState([]);
     const [toggleShowMenu, setToggleShowMenu] = useState(false);
@@ -22,7 +20,6 @@ export function ContextProvider(props) {
     const { t, i18n } = useTranslation('common');
 
     useEffect(() => {
-        setMenuItems(menu_items_data);
         setSocial(social_data);
         setProjects(projects_links);
         const html = window.document.documentElement;
@@ -67,7 +64,6 @@ export function ContextProvider(props) {
 
     return (
         <Context.Provider value={{
-            menuItems,
             social,
             projects,
             toggleShowMenu, setToggleShowMenu,

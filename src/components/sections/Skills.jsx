@@ -8,6 +8,7 @@ import tailwind_svg from "../../../public/images/skills/tailwind-icon.svg";
 import bootstrap_svg from "../../../public/images/skills/bootstrap-icon.svg";
 import bulma_svg from "../../../public/images/skills/bulma-icon.svg";
 import python_svg from "../../../public/images/skills/python-icon.svg";
+import express_svg from "../../../public/images/skills/expressjs-icon.svg";
 import nodejs_svg from "../../../public/images/skills/nodejs-icon.svg";
 import figma_svg from "../../../public/images/skills/firgma-icon.svg";
 import git_svg from "../../../public/images/skills/git-icon.svg";
@@ -55,6 +56,7 @@ function Skills() {
                         <div className="flex flex-wrap justify-center items-center gap-6 mt-8">
                             <SkillCard title="Python" imgUrl={python_svg}/>
                             <SkillCard title="Node JS" imgUrl={nodejs_svg}/>
+                            <SkillCard title="Express JS" imgUrl={express_svg}/>
                         </div>
                     </div>
                 </div>

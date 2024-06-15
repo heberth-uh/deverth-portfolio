@@ -21,7 +21,7 @@ function Hero() {
             <div className="h-full w-full absolute bottom-0 left-0 bg-hero-pattern dark:bg-hero-pattern-dark bg-cover bg-no-repeat"></div>
             <div className="h-4/5 w-full absolute bottom-0 bg-gradient-to-b from-transparent to-white dark:to-dark-blue"></div>
 
-            <div className="container relative mx-auto md:flex md:justify-between px-6 xl:px-0 py-16 lg:py-6 font-body">
+            <div className="container relative mx-auto md:flex md:justify-between px-6 xl:px-0 py-16 xl:py-36 lg:py-6 font-body">
                 <div className='flex flex-col justify-center md:text-left'>
                     <p className='font-bold md:text-lg lg:text-xl text-sky-blue mb-2'>{t('hero.subtitle')}</p>
                     <h3 className="text-dark-blue dark:text-white font-extrabold text-[2.80rem] leading-none md:text-6xl lg:text-7xl lg:leading-[70px]">

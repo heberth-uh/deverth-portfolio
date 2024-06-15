@@ -16,11 +16,11 @@ function Header() {
     const { t } = useTranslation('common')
     const navbar = t('navbar');
 
-    // This function displays de itmes from the navbar
+    // This function displays the items from the navbar
     function displayMenuItems(dispayClass) {
         return (
             <div className="md:flex items-center">
-                <ul className="">
+                <ul>
                     {navbar.map(item => (
                         <li key={item.id} className={`${dispayClass} mx-2 mb-2 py-2`}>
                             <a href={item.target} className={`py-2 text-content-blue dark:text-gray-400 hover:text-sky-blue dark:hover:text-cyan-400`} onClick={() => setToggleShowMenu(false)}>

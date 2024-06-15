@@ -34,7 +34,7 @@ function Projects() {
 
     return (
         <div className="bg-gray-50 dark:bg-darker-blue" id="projects_section">
-            <div className="container mx-auto py-16 px-6 xl:px-0 font-body">
+            <div className="container mx-auto py-16 px-6 xl:py-32 xl:px-0 font-body">
 
                 <TitleSection name={t('projects.title')} />
 

@@ -6,6 +6,10 @@
             "target": "#about_section"
         },{
             "id": 2,
+            "name": "Experiencia",
+            "target": "#experience_section"
+        },{
+            "id": 3,
             "name": "Proyectos",
             "target": "#projects_section"
         }

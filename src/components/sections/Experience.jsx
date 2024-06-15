@@ -21,7 +21,7 @@ function Experience() {
             <div className="h-full w-full absolute top-0 left-0 bg-hero-pattern dark:bg-hero-pattern-dark bg-cover bg-no-repeat"></div>
             <div className="h-4/5 w-full absolute top-0 bg-gradient-to-t from-transparent to-white via-white dark:to-darker-blue dark:via-darker-blue"></div>
 
-            <div className="container relative mx-auto px-6 xl:px-0 py-16 lg:py-6 font-body">
+            <div className="container relative mx-auto px-6 xl:pt-32 xl:px-0 py-16 lg:py-6 font-body" id="experience_section">
                 <TitleSection name={t('experience.title')}/>
 
                 <div className="flex justify-center items-center my-10 md:my-20">
