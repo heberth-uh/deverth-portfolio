@@ -24,15 +24,15 @@ function Footer(){
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                     <div id="socialMedia" className="mb-6">
-                        <p className="text-slate-500 dark:text-sky-blue !dark:text-slate-400 mb-3 text-sm lg:text-sm">{t('footer:socialMedia')}</p>
+                        <p className="text-slate-600 dark:text-sky-blue mb-3 text-sm lg:text-sm">{t('footer:socialMedia')}</p>
                         <ul className="text-content-blue dark:text-slate-400 text-sm">
-                            <li className="hover:text-slate-300 cursor-pointer mb-1">
+                            <li className="hover:text-sky-blue dark:hover:text-slate-300 cursor-pointer mb-1">
                                 <a href={social.linkedin} target="_blank" className="flex gap-2 items-center">
                                     <span><GrLinkedin/></span>
                                     <span>Linkedin</span>
                                 </a>
                             </li>
-                            <li className="hover:text-slate-300 cursor-pointer mb-1">
+                            <li className="hover:text-sky-blue dark:hover:text-slate-300 cursor-pointer mb-1">
                                 <a href={social.github} target="_blank" className="flex gap-2 items-center">
                                     <span><GrGithub/></span>
                                     <span>Github</span>
@@ -41,17 +41,17 @@ function Footer(){
                         </ul>
                     </div>
                     <div>
-                        <p className="text-slate-500 dark:text-sky-blue mb-2 text-sm lg:text-sm">{t('footer:sections')}</p>
+                        <p className="text-slate-600 dark:text-sky-blue mb-3 text-sm lg:text-sm">{t('footer:sections')}</p>
                         <ul className="text-content-blue dark:text-slate-400 text-sm">{
                             navbar.map(item => (
-                                <li key={item.id} className="hover:text-slate-300 cursor-pointer mb-1">
+                                <li key={item.id} className="hover:text-sky-blue dark:hover:text-slate-300 cursor-pointer mb-1">
                                     <a href={item.target} to='route'>&gt; {item.name}</a>
                                 </li>
                             ))
                         }</ul>
                     </div>
                 </div>
-                <div id="credits" className="mt-5 text-center text-[0.7em] lg:text-sm text-slate-600 dark:text-slate-400">
+                <div id="credits" className="mt-8 text-center text-[0.7em] lg:text-sm text-slate-600 dark:text-slate-400">
                     {t('footer:copyright')}
                 </div>
             </div>
