@@ -45,7 +45,7 @@ function ProjectCard({ title, description, img, repository_link, preview_link, l
                 </div>
                 <div className="md:w-6/12 order-1 md:order-2">
                     <div className="flex justify-center items-center w-full h-full overflow-hidden">
-                        <img src={img} alt="Imagen" className="object-cover w-full h-full hover:scale-110 transition delay-150 ease-in-out duration-500"/>
+                        <img src={img} alt="Project preview" className="object-cover w-full h-full hover:scale-110 transition delay-150 ease-in-out duration-500"/>
                     </div>
                 </div>
             </div>

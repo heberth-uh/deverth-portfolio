@@ -4,7 +4,7 @@ function SkillCard({title, imgUrl}) {
             <div className="bg-gradient-to-tl from-sky-400/10 via-sky-300/10 to-sky-200/10 dark:from-sky-900/30 dark:via-violet-300/10 dark:to-teal-200/10 w-full h-full rounded-2xl drop-shadow-2xl">
                 <div className="d-flex justify-center text-center py-6 px-5">
                     <div className="mb-2">
-                        <img className="h-8 md:h-[40px] mx-auto" src={imgUrl}/>
+                        <img className="h-8 md:h-[40px] mx-auto" src={imgUrl} alt={`${title} logo`}/>
                     </div>
                     <div className="text-[10px] text-content-blue/70 dark:text-gray-100 md:text-xs font-extralight ">
                         {title}

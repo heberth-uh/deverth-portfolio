@@ -13,7 +13,7 @@ function About() {
 
             <div className='flex-row md:flex items-center gap-6 my-10'>
               <div className='md:w-1/2 flex justify-center relative'>
-                <img src={AboutImg} className='h-56 md:h-72 lg:h-80 xl:h-96'/>
+                <img src={AboutImg} className='h-56 md:h-72 lg:h-80 xl:h-96' alt=''/>
                 <div className="absolute z-0 w-[30%] h-[30%] right-1/2 top-20 translate-x-1/2 translate-y-1/2 -bg-green-500 cyan__gradient" />
               </div>
               

@@ -47,7 +47,7 @@ function Hero() {
                     </div>
                 </div>
                 <div className='flex items-center justify-center'>
-                    <img src={hero_img} alt="developer" className='hidden md:block h-96 lg:h-auto z-[5]'/>
+                    <img src={hero_img} alt="" className='hidden md:block h-96 lg:h-auto z-[5]'/>
                     <div className="absolute z-[0] w-[16%] h-[28%] right-72 top-20 translate-x-1/2 translate-y-1/2 blue__gradient" />
                     <div className="absolute z-[0] w-[10%] h-[10%] right-1/3 bottom-52 translate-x-1/2 translate-y-1/2 green__gradient" />
                 </div>

@@ -48,12 +48,12 @@ function Experience() {
                         </span>
                     </h4>
                     <div className="flex flex-col md:flex-row items-center justify-center gap-y-14 md:gap-x-10 lg:gap-16 my-10">
-                        <img src={company1} className='w-44 h-auto md:h-16 md:w-auto z-[5] dark:hidden' />
-                        <img src={company1White} className='w-44 h-auto md:h-16 md:w-auto z-[5] hidden dark:block' />
-                        <img src={company2} className='w-44 h-auto md:h-16 md:w-auto z-[5] dark:hidden' />
-                        <img src={company2White} className='w-44 h-auto md:h-16 md:w-auto z-[5] hidden dark:block' />
-                        <img src={company3} className='w-44 h-auto md:h-16 md:w-auto z-[5] dark:hidden' />
-                        <img src={company3White} className='w-44 h-auto md:h-16 md:w-auto z-[5] hidden dark:block' />
+                        <img src={company1} className='w-44 h-auto md:h-16 md:w-auto z-[5] dark:hidden' alt="4 Security company"/>
+                        <img src={company1White} className='w-44 h-auto md:h-16 md:w-auto z-[5] hidden dark:block' alt="4 Security company"/>
+                        <img src={company2} className='w-44 h-auto md:h-16 md:w-auto z-[5] dark:hidden' alt="Simec company"/>
+                        <img src={company2White} className='w-44 h-auto md:h-16 md:w-auto z-[5] hidden dark:block' alt="Empresa company"/>
+                        <img src={company3} className='w-44 h-auto md:h-16 md:w-auto z-[5] dark:hidden' alt="Saint-Gobain company"/>
+                        <img src={company3White} className='w-44 h-auto md:h-16 md:w-auto z-[5] hidden dark:block' alt="Saint-Gobain company"/>
                     </div>
                 </div>
             </div>
