@@ -54,6 +54,11 @@
             "title": "Football Club Landing Page",
             "description": "A template to organice the information about your football club where you can show the incoming matches, table positions, squad, etc.",
             "url": "https://github.com/heberth-uh/football-club"
+        },
+        "quickNotes": {
+            "title": "Quick Notes (To-Do list)",
+            "description": "A simple to-do list website built using the MERN stack with MySQL. It allows users to create, update and delete tasks or notes and set them as done anytime.",
+            "url": "https://github.com/heberth-uh/football-club"
         }
     }
 }

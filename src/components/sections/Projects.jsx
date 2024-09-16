@@ -5,12 +5,11 @@ import { useTranslation } from "react-i18next";
 import TitleSection from "../widgets/TitleSection";
 import ProjectCard from "../widgets/ProjectCard";
 // Icons
-import { GrGithub } from "react-icons/gr";
-import { FaReact } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
+import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { RiJavascriptFill } from "react-icons/ri";
-
+import { GrMysql } from "react-icons/gr";
+import { BiLogoTailwindCss } from "react-icons/bi";
 
 function Projects() {
 
@@ -19,17 +18,29 @@ function Projects() {
 
     const langs = [
         {
-            name: 'react',
-            component: <FaReact/> },
+            name: 'javascript',
+            title: 'JavaScript',
+            icon: <RiJavascriptFill/> },
         {
-            name: 'tailwind',
-            component: <SiTailwindcss/> },
+            name: 'react',
+            title: 'React JS',
+            icon: <FaReact/> },
         {
             name: 'express',
-            component: <SiExpress/> },
+            title: 'Express.js',
+            icon: <SiExpress/> },
         {
-            name: 'javascript',
-            component: <RiJavascriptFill/> },
+            name: 'node',
+            title: 'Node.js',
+            icon: <FaNodeJs/> },
+        {
+            name: 'tailwind',
+            title: 'TailWind CSS',
+            icon: <BiLogoTailwindCss/> },
+        {
+            name: 'mysql',
+            title: 'MySQL',
+            icon: <GrMysql/> },
     ]
 
     return (
@@ -38,7 +49,7 @@ function Projects() {
 
                 <TitleSection name={t('projects.title')} />
 
-                <div className="flex flex-col items-center my-10">
+                <div className="flex flex-col items-center my-10 gap-y-10">
                     {projects.map( (project, index) => (
                         <ProjectCard
                             key={index}

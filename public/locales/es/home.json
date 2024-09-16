@@ -54,6 +54,11 @@
             "title": "Landing Page de Club de Fútbol",
             "description": "Una plantilla para organizar la información de tu equipo de fútbol para mostrar los partidos siguientes, tabla de posiciones, plantilla de jugadores, etc.",
             "url": "https://github.com/heberth-uh/football-club"
+        },
+        "quickNotes": {
+            "title": "Quick Notes (Lista de tareas)",
+            "description": "Un sitio web simple de lista de tareas creado usando el stack MERN con MySQL. Permite a los usuarios crear, actualizar y eliminar tareas o notas, además de marcarlas como hechas en cualquier momento.",
+            "url": "https://github.com/heberth-uh/football-club"
         }
     }
 }
