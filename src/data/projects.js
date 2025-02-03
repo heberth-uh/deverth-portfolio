@@ -12,7 +12,7 @@ export const projects_links = [
         name: 'quickNotes',
         img: '../../images/projects/project-quick-notes.png',
         links: {
-            preview_link: "https://quicktask.up.railway.app/",
+            preview_link: "https://quick-notes-z74c.onrender.com",
             repository_link: "https://github.com/heberth-uh/quick-notes"
         },
         languages: ['javascript', 'mysql', 'express', 'react', 'node', 'tailwind']
