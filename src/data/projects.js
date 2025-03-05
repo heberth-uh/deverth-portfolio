@@ -16,5 +16,14 @@ export const projects_links = [
             repository_link: "https://github.com/heberth-uh/quick-notes"
         },
         languages: ['javascript', 'mysql', 'express', 'react', 'node', 'tailwind']
+    },
+    {
+        name: 'tripAdvisor',
+        img: '../../images/projects/project-tripadvisor.png',
+        links: {
+            preview_link: "https://trip-adivisor.vercel.app/",
+            repository_link: "https://github.com/heberth-uh/trip-adivisor"
+        },
+        languages: ['javascript', 'react', 'tailwind']
     }
 ]

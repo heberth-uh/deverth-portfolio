@@ -59,6 +59,11 @@
             "title": "Quick Notes (Lista de tareas)",
             "description": "Un sitio web simple de lista de tareas creado usando el stack MERN con MySQL. Permite a los usuarios crear, actualizar y eliminar tareas o notas, además de marcarlas como hechas en cualquier momento.",
             "url": "https://github.com/heberth-uh/football-club"
+        },
+        "tripAdvisor": {
+            "title": "Trip Advisor",
+            "description": "Un sitio donde podrás encontrar cualquier lugar del mundo y consultar precios de puntos interesantes, atracciones o restaurantes.",
+            "url": "https://github.com/heberth-uh/trip-adivisor"
         }
     }
 }
