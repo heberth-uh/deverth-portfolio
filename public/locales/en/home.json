@@ -59,6 +59,11 @@
             "title": "Quick Notes (To-Do list)",
             "description": "A simple to-do list website built using the MERN stack with MySQL. It allows users to create, update and delete tasks or notes and set them as done anytime.",
             "url": "https://github.com/heberth-uh/football-club"
+        },
+        "tripAdvisor": {
+            "title": "Trip Advisor",
+            "description": "A site where you can find any place around the world and check prices for interesting spots, attractions or restaurants.",
+            "url": "https://github.com/heberth-uh/trip-adivisor"
         }
     }
 }
