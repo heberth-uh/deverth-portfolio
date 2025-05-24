@@ -21,7 +21,7 @@ export const projects_links = [
         name: 'tripAdvisor',
         img: '../../images/projects/project-tripadvisor.png',
         links: {
-            preview_link: "https://trip-adivisor.vercel.app/",
+            preview_link: "https://mytrip-advisor.vercel.app/",
             repository_link: "https://github.com/heberth-uh/trip-adivisor"
         },
         languages: ['javascript', 'react', 'tailwind']
