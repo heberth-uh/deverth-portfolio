@@ -2,12 +2,9 @@ import { useContext } from "react";
 import { Context } from "../../context/Context";
 import { useTranslation } from "react-i18next";
 
-import { TfiWorld } from "react-icons/tfi";
 import { FaCheck } from "react-icons/fa";
 
 import { PiTranslateBold } from "react-icons/pi";
-import { BsTranslate } from "react-icons/bs";
-import { PiTranslate } from "react-icons/pi";
 
 function LangSelection() {
 

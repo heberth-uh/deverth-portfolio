@@ -1,23 +1,20 @@
 {
     "hero": {
         "subtitle": "Hi, my name is",
-        "title": "Heberth, <br/>Front-end website<br/><1>developer</1>",
-        "description": "I am a computer system engineer; I like building <br/>websites with beautiful interfaces and enhancing <br/>user experiences.",
+        "title": "<1>Heberth Uh</1>,<br/>Website Developer",
+        "description": "I am a Computer Science Engineer with 5+ years of experience in software development, with expertise in creating unique, interactive, and user-friendly web applications that drive modern digital solutions.",
         "button_contact": "Send me an email",
         "button_start": "Let's get started!"
     },
     "about": {
         "title": "About me",
         "subtitle": "Know more <1/><2>about me</2>",
-        "content": "I am a programmer who is passionate about creating websites on the <1>Front-end</1> side and also has solid knowledge in the <2>Back-end</2> side. I am a self-taught developper who is constantly learning about new technologies and that loves <3>designing</3> and sketching interfaces.<br/><br/>I enjoy taking on new challenges that put my capabilities into practice, allowing me to learn new skills."
+        "content": "I am a programmer who combines strong expertise in modern <1>front-end</1> technologies with solid <1>back-end</1> capabilities. I enjoy taking on new technical challenges that put my capabilities into practice, allowing me to build robust web solutions, automate workflows, and deliver seamless user experiences.<br/><br/>Experienced in developing and maintaining diverse digital products across collaborative environments, with a strong focus on modern web ecosystems, <1>AI-assisted</1> workflows, and <1>automation</1>. Always eager to explore new domains, adapt to different business needs, and expand my technical stack."
     },
     "skills": {
         "title": "Skills",
         "sections": {
             "other": "Other skills"
-        },
-        "skills": {
-            "responsive": "Adaptive design"
         }
     },
     "experience": {
@@ -25,21 +22,29 @@
         "companies": "Companies where I contributed value",
         "experiences": [
             {
-                "id": 1,
+                "id": 3,
                 "education": false,
-                "period": "February 2022 - Present",
+                "period": "April 2025 - Present",
+                "duration": "",
+                "title": "Software Engineer",
+                "subtitle": "Think Future Technologies",
+                "description": "Develop and maintain performance marketing landing pages across 20+ brands and verticals. Work across both legacy <strong>WordPress/PHP</strong> sites and modern campaign applications built with <strong>Next.js, React.js, Tailwind CSS, and Nx monorepo</strong>, collaborating through fast-iteration CI/CD and agile workflows."
+            },{
+                "id": 2,
+                "education": false,
+                "period": "February 2022 - April 2025",
                 "duration": "",
                 "title": "Fullstack Odoo Developer",
                 "subtitle": "Toh Soluciones Digitales",
-                "description": "Odoo developer specialized on creating custom system for companies that use (or want to use) Odoo as their ERP solution. Experienced in Odoo module development using <strong>Python, JavaScript, Bootstrap CSS and XML/HTML</strong> for designing business logic, <strong>API integrations</strong> and <strong>building</strong> or <strong>redesigning landing pages</strong> and the Odoo graphic interface."
+                "description": "Odoo developer specialized in building custom ERP and business-oriented solutions using <strong>Python, JavaScript, Bootstrap CSS, and XML/HTML</strong>. Managed module development across core business domains (<strong>CRM, Sales, Inventory, Accounting, E-commerce</strong>) alongside client-facing technical consulting, requirements gathering and <strong>API integrations</strong>."
             },{
-                "id": 2,
+                "id": 1,
                 "education": true,
                 "period": "August 2017 - January 2022",
-                "duration": "4 years and a half",
+                "duration": "",
                 "title": "Computer Science Engineering",
                 "subtitle": "TECNM Campus Motul",
-                "description": "Graduated and titled as Computer Science Engineer. In my journey as a student I was part of relevant projects for the university such as <a1>LaGranjita Point of Sale</a1>, where I put into practice the <strong>web programming</strong>. I did my <strong>internship</strong> in the company Toh Soluciones Dgitales under the project <a2>\"Project Management Dashboard\"</a2> where after finishing, they hired me.",
+                "description": "Graduated with a Bachelor's Degree in <strong>Computer Science Engineering</strong>, with a focus on software and web development.",
                 "links": [
                     "https://github.com/heberth-uh/lagranjita",
                     "https://apps.odoo.com/apps/modules/14.0/toh_admin_proyecto/"
@@ -50,20 +55,33 @@
     "projects": {
         "title": "PROJECTS",
         "btnCode": "Code",
-        "footballClub": {
-            "title": "Football Club Landing Page",
-            "description": "A template to organice the information about your football club where you can show the incoming matches, table positions, squad, etc.",
-            "url": "https://github.com/heberth-uh/football-club"
+        "customerPaymentManager": {
+            "title": "Customer Payment Manager",
+            "description": "A customer payment management application built with Next.js to manage customers, track outstanding balances, and organize payment records. Currently under development with new upcoming features."
+        },
+        "openpayPayment": {
+            "title": "Openpay Payment",
+            "description": "Openpay payment gateway integration for Odoo e-commerce, supporting credit and debit cards, bank transfers, installment payments, 3D Secure, and payment status tracking."
+        },
+        "conektaPayment": {
+            "title": "Conekta Payment",
+            "description": "Odoo payment integration for Conekta, enabling e-commerce payments through credit and debit cards, cash, and bank transfers, with webhook-based payment status updates."
+        },
+        "zWatches": {
+            "title": "ZWatches - Product Management",
+            "description": "A product management application built with Next.js and MongoDB, implementing. CRUD operations for a watch catalog and image management through Cloudinary."
+        },
+        "awsLambaCrud": {
+            "title": "Basic AWS Lambda CRUD",
+            "description": "A serverless CRUD REST API built using AWS Lambda, DynamoDB, and the Serverless Framework to demonstrate cloud-native backend development and serverless resource management."
         },
         "quickNotes": {
             "title": "Quick Notes (To-Do list)",
-            "description": "A simple to-do list website built using the MERN stack with MySQL. It allows users to create, update and delete tasks or notes and set them as done anytime.",
-            "url": "https://github.com/heberth-uh/football-club"
+            "description": "A full-stack task management applicatoin built with Node.js, Express.js, React.js, and MySQL. Features real-time state updates and CRUD operations for organizing daily notes and tasks efficiently."
         },
         "tripAdvisor": {
             "title": "Trip Advisor",
-            "description": "A site where you can find any place around the world and check prices for interesting spots, attractions or restaurants.",
-            "url": "https://github.com/heberth-uh/trip-adivisor"
+            "description": "A travel discovery website that uses the Travel Advisor API to explore destinations, attractions, restaurants, hotels, and other points of interest around the world."
         }
     }
 }

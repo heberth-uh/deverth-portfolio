@@ -25,7 +25,7 @@ function ItemExperience( { period, duration, title, subtitle, description, isSch
                                 // inside the reducer to get an object with the links to replace the <ax> tag on description translation
                                 links.reduce( (acc, link, index) => ({
                                     ...acc,
-                                    [`a${index+1}`] : <a key={index+1} href={link} className="underline" target="_blank"/>
+                                    [`a${index+1}`] : <a key={index+1} href={link} className="underline" target="_blank" rel="noreferrer"/>
                                 }),
                                 { 'strong': <strong className="dark:text-gray-200 font-medium" /> }
                             )

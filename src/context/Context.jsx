@@ -17,7 +17,7 @@ export function ContextProvider(props) {
     const [language, setLanguage] = useState('en')
     const themeDropdownRef = useRef();
     const langDropdownRef = useRef();
-    const { t, i18n } = useTranslation('common');
+    const { i18n } = useTranslation('common');
 
     useEffect(() => {
         setSocial(social_data);
@@ -60,7 +60,7 @@ export function ContextProvider(props) {
             document.removeEventListener('mousedown', handleClickOutside);
         }
 
-    }, [toggleShowMenu, theme, language])
+    }, [toggleShowMenu, theme, language, i18n.language, themeMode, toggleLangSelection, toggleThemeSelection])
 
     return (
         <Context.Provider value={{

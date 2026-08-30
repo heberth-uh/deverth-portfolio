@@ -1,12 +1,44 @@
 export const projects_links = [
     {
-        name: 'footballClub',
-        img: '../../images/projects/project-football-club.png',
+        name: 'customerPaymentManager',
+        img: '../../images/projects/project-payment-manager.png',
         links: {
-            preview_link: "https://football-club-one.vercel.app/",
-            repository_link: "https://github.com/heberth-uh/football-club"
+            repository_link: "https://github.com/heberth-uh/project-payment-manager"
         },
-        languages: ['javascript', 'react', 'tailwind']
+        languages: ['next', 'typescript', 'react', 'prisma', 'supabase']
+    },
+    {
+        name: 'openpayPayment',
+        img: '../../images/projects/project-openpay.png',
+        links: {
+            preview_link: "https://apps.odoo.com/apps/modules/17.0/toh_openpay_token",
+        },
+        languages: ['python', 'javascript', 'openapy']
+    },
+    {
+        name: 'conektaPayment',
+        img: '../../images/projects/project-conekta.png',
+        links: {
+            preview_link: "https://apps.odoo.com/apps/modules/16.0/toh_payment_conekta",
+        },
+        languages: ['python', 'javascript']
+    },
+    {
+        name: 'zWatches',
+        img: '../../images/projects/project-zwatches.png',
+        links: {
+            repository_link: "https://github.com/heberth-uh/zwatches-ecommerce",
+        },
+        languages: ['next', 'typescript', 'react', 'mongodb', 'tailwind', 'cloudinary']
+
+    },
+    {
+        name: 'awsLambaCrud',
+        img: '../../images/projects/project-aws-api.png',
+        links: {
+            repository_link: "https://github.com/heberth-uh/basic-aws-lamdba-crud"
+        },
+        languages: ['javascript', 'node', 'aws']
     },
     {
         name: 'quickNotes',
@@ -24,6 +56,6 @@ export const projects_links = [
             preview_link: "https://mytrip-advisor.vercel.app/",
             repository_link: "https://github.com/heberth-uh/trip-adivisor"
         },
-        languages: ['javascript', 'react', 'tailwind']
+        languages: ['javascript', 'react', 'tailwind', 'rapidapi']
     }
 ]

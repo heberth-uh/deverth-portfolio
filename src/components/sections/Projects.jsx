@@ -5,11 +5,11 @@ import { useTranslation } from "react-i18next";
 import TitleSection from "../widgets/TitleSection";
 import ProjectCard from "../widgets/ProjectCard";
 // Icons
-import { FaReact, FaNodeJs } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
-import { RiJavascriptFill } from "react-icons/ri";
+import { FaReact, FaNodeJs, FaPython, FaAws } from "react-icons/fa";
+import { SiNextdotjs, SiExpress, SiPrisma, SiMongodb } from "react-icons/si";
+import { RiJavascriptFill, RiSupabaseFill } from "react-icons/ri";
 import { GrMysql } from "react-icons/gr";
-import { BiLogoTailwindCss } from "react-icons/bi";
+import { BiLogoTypescript, BiLogoTailwindCss } from "react-icons/bi";
 
 function Projects() {
 
@@ -21,6 +21,14 @@ function Projects() {
             name: 'javascript',
             title: 'JavaScript',
             icon: <RiJavascriptFill/> },
+        {
+            name: 'typescript',
+            title: 'TypeScript',
+            icon: <BiLogoTypescript/> },
+        {
+            name: 'next',
+            title: 'Next JS',
+            icon: <SiNextdotjs/> },
         {
             name: 'react',
             title: 'React JS',
@@ -34,6 +42,10 @@ function Projects() {
             title: 'Node.js',
             icon: <FaNodeJs/> },
         {
+            name: 'python',
+            title: 'Python',
+            icon: <FaPython/> },
+        {
             name: 'tailwind',
             title: 'TailWind CSS',
             icon: <BiLogoTailwindCss/> },
@@ -41,6 +53,22 @@ function Projects() {
             name: 'mysql',
             title: 'MySQL',
             icon: <GrMysql/> },
+        {
+            name: 'mongodb',
+            title: 'MongoDB',
+            icon: <SiMongodb/> },
+        {
+            name: 'prisma',
+            title: 'Prisma',
+            icon: <SiPrisma/> },
+        {
+            name: 'supabase',
+            title: 'Supabase',
+            icon: <RiSupabaseFill/> },
+        {
+            name: 'aws',
+            title: 'AWS',
+            icon: <FaAws/> },
     ]
 
     return (
@@ -57,7 +85,7 @@ function Projects() {
                             description={t(`projects.${project.name}.description`)}
                             img={project.img}
                             repository_link={project.links.repository_link}
-                            preview_link={project.links.preview_link}
+                            preview_link={project.links.preview_link ?? false}
                             languages={ langs.filter( lang => project.languages.includes(lang.name) ) }
                         />
                     ))}
