@@ -1,0 +1,37 @@
+// Design tokens as CSS custom properties, for runtime theme switching.
+// Tailwind's own `dark:` variant also targets the same `.dark` class,
+// so both systems stay in sync.
+
+// Imported once, globally, as a side-effect import in main.jsx — never
+// @use this file from a component .scss
+//
+// tailwind.config.js maps these to `bg-bg`, `text-fg`, etc. utilities, so
+// the same source of truth works for both plain Tailwind classes and the
+// custom BEM rules in sections.
+:root {
+  --color-bg: #f6f6f6;
+  --color-bg-alt: #eeeeee;
+  --color-surface: #e6e6e6;
+  --color-surface-2: #dadada;
+  --color-border: #cfcfcf;
+  --color-border-strong: #9a9a9a;
+
+  --color-fg: #141414;
+  --color-fg-secondary: #4d4d4d;
+  --color-fg-tertiary: #6f6f6f;
+  --color-fg-faint: #a3a3a3;
+}
+
+.dark {
+  --color-bg: #0a0a0a;
+  --color-bg-alt: #0e0e0f;
+  --color-surface: #151516;
+  --color-surface-2: #1c1c1e;
+  --color-border: #28282a;
+  --color-border-strong: #454548;
+
+  --color-fg: #f5f5f4;
+  --color-fg-secondary: #a9a9ae;
+  --color-fg-tertiary: #78787e;
+  --color-fg-faint: #3c3c3f;
+}

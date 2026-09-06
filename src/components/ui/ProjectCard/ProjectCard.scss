@@ -1,0 +1,137 @@
+@use "../../../styles/breakpoints" as *;
+
+.project-card {
+  @apply flex flex-col;
+  border: 1px solid var(--color-border);
+
+  // .project-card__image
+  &__image {
+    height: 180px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--color-border);
+
+    @include up-desktop {
+      height: 225px;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+
+    &:hover &--preview {
+      opacity: 1;
+    }
+
+    // project-card__image--preview
+    &--preview {
+      @apply flex items-center justify-center font-plex font-semibold;
+      position: absolute;
+      inset: 0;
+      background: color-mix(in srgb, var(--color-bg) 58%, transparent);
+      color: var(--color-fg);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  }
+
+  // .project-card__content
+  &__content {
+    @apply flex flex-col justify-between;
+    padding: 20px;
+    flex-grow: 1;
+    gap: 16px;
+    background: var(--color-bg);
+
+    @include up-tablet {
+      padding: 26px;
+      font-size: 20px;
+      gap: 20px;
+    }
+  }
+
+  // .project-card__title
+  &__title {
+    @apply font-display font-semibold;
+    color: var(--color-fg);
+    font-size: 16px;
+    margin-bottom: 8px;
+
+    @include up-desktop {
+      font-size: 18px;
+    }
+
+    // .project-card__title--link
+    &--link {
+      @apply flex items-center gap-2;
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: black;
+        text-underline-offset: 4px;
+      }
+    }
+  }
+
+  // .project-card__description
+  &__description {
+    @apply font-plex font-light;
+    color: var(--color-fg-secondary);
+    font-size: 13px;
+    line-height: 1.7;
+
+    @include up-tablet {
+      font-size: 14px;
+    }
+
+    @include up-desktop {
+      font-size: 16px;
+    }
+  }
+
+  // .project-card__footer
+  &__footer {
+    @apply flex justify-between;
+  }
+
+  // .project-card__link
+  &__link {
+    @apply flex items-center justify-center gap-2 font-plex font-medium;
+    border: 1px solid var(--color-border-strong);
+    color: var(--color-fg);
+    font-size: 12px;
+    padding: 8px 12px;
+    transition:
+      background-color 0.15s ease,
+      border-color 0.15s ease;
+
+    &:hover {
+      background: var(--color-surface-2);
+      border-color: var(--color-fg);
+    }
+
+    @include up-desktop {
+      padding: 10px 14px;
+      font-size: 14px;
+    }
+  }
+
+  // .project-card__stack
+  &__stack {
+    @apply flex items-center gap-3 lg:gap-4;
+  }
+
+  // .project-card__lang
+  &__lang {
+    color: var(--color-fg-secondary);
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,62 @@
+@use "../../../styles/breakpoints" as *;
+
+.about {
+  background: var(--color-bg-alt);
+
+  // .about__inner
+  &__inner {
+    padding-block: 60px;
+
+    @include up-tablet {
+      padding-block: 80px;
+    }
+
+    @include up-desktop {
+      padding-block: 112px;
+    }
+  }
+
+  // .about__heading
+  &__heading {
+    @apply font-display font-bold;
+    font-size: 26px;
+    line-height: 1.25;
+    color: var(--color-fg);
+    margin: 0 0 18px;
+
+    @include up-tablet {
+      font-size: 33px;
+      line-height: 1.2;
+      margin-bottom: 22px;
+    }
+
+    @include up-desktop {
+      font-size: 44px;
+      max-width: 820px;
+      margin-bottom: 28px;
+    }
+  }
+
+  // .about__content
+  &__content {
+    @apply font-plex font-light;
+    font-size: 13.5px;
+    line-height: 1.85;
+    color: var(--color-fg-secondary);
+
+    @include up-tablet {
+      font-size: 14.5px;
+    }
+
+    @include up-desktop {
+      font-size: 16px;
+      max-width: 760px;
+    }
+  }
+
+  // .about__emphasis
+  &__emphasis {
+    color: var(--color-fg-secondary);
+    font-weight: 600;
+  }
+}
