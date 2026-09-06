@@ -1,13 +1,15 @@
 export const projects_links = [
     {
+        id: 1,
         name: 'customerPaymentManager',
         img: '../../images/projects/project-payment-manager.png',
         links: {
-            repository_link: "https://github.com/heberth-uh/project-payment-manager"
+            repository_link: "https://github.com/heberth-uh/payment-manager"
         },
         languages: ['next', 'typescript', 'react', 'prisma', 'supabase']
     },
     {
+        id: 2,
         name: 'openpayPayment',
         img: '../../images/projects/project-openpay.png',
         links: {
@@ -16,6 +18,7 @@ export const projects_links = [
         languages: ['python', 'javascript', 'openapy']
     },
     {
+        id: 3,
         name: 'conektaPayment',
         img: '../../images/projects/project-conekta.png',
         links: {
@@ -24,6 +27,7 @@ export const projects_links = [
         languages: ['python', 'javascript']
     },
     {
+        id: 4,
         name: 'zWatches',
         img: '../../images/projects/project-zwatches.png',
         links: {
@@ -33,6 +37,7 @@ export const projects_links = [
 
     },
     {
+        id: 5,
         name: 'awsLambaCrud',
         img: '../../images/projects/project-aws-api.png',
         links: {
@@ -41,15 +46,7 @@ export const projects_links = [
         languages: ['javascript', 'node', 'aws']
     },
     {
-        name: 'quickNotes',
-        img: '../../images/projects/project-quick-notes.png',
-        links: {
-            preview_link: "https://quick-notes-z74c.onrender.com",
-            repository_link: "https://github.com/heberth-uh/quick-notes"
-        },
-        languages: ['javascript', 'mysql', 'express', 'react', 'node', 'tailwind']
-    },
-    {
+        id: 7,
         name: 'tripAdvisor',
         img: '../../images/projects/project-tripadvisor.png',
         links: {

@@ -1,0 +1,18 @@
+@use "../../../styles/breakpoints" as *;
+
+.text-accent {
+  text-decoration: underline;
+  text-decoration-color: var(--color-border-strong);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+
+  @include up-tablet {
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+  }
+
+  @include up-desktop {
+    text-decoration-thickness: 4px;
+    text-underline-offset: 10px;
+  }
+}

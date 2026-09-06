@@ -7,14 +7,16 @@
         "button_start": "¡Empecemos!"
     },
     "about": {
-        "title": "Sobre mi",
-        "subtitle": "Conoce más <1/><2>sobre mí</2>",
+        "title": "Sobre mí",
+        "subtitle": "Conoce más <1>sobre mí</1>",
         "content": "Soy un programador y combino una sólida experiencia en tecnologías <1>front-end</1> modernas con amplios conocimientos en <1>back-end</1>. Me gusta asumir nuevos retos que permitan poner mis capacidades en práctica, construir soluciones web modernas, automatizar flujos de trabajo y ofrecer experiencias de usuario fluidas.<br/><br/>Cuento con experiencia en el desarrollo y mantenimiento de diversos productos digitales en entornos colaborativos, con un fuerte enfoque en tecnologías web modernas, flujos de trabajo <1>asistidos por IA</1> y <1>automatización</1>. Siempre estoy dispuesto a explorar nuevos ámbitos, adaptarme a diferentes necesidades de negocio y ampliar mi stack tecnológico."
     },
     "skills": {
         "title": "Habilidades",
-        "sections": {
-            "other": "Otras habilidades"
+        "groups": {
+            "frontend": "Front-end",
+            "backend": "Back-end",
+            "other": "Other skills"
         }
     },
     "experience": {
@@ -24,31 +26,24 @@
             {
                 "id": 3,
                 "education": false,
-                "period": "Abril 2025 - Present",
-                "duration": "",
+                "period": "Abril 2025 - Presente",
                 "title": "Software Engineer",
                 "subtitle": "Think Future Technologies",
-                "description": "Desarrollo y mantenimiento de landing pages de marketing orientadas a la generación de leads para más de 20 marcas en diferentes sectores. Trabajo tanto en sitios existentes basados en <strong>Wordpress/PHP</strong> como en aplicaciones modernas construidas con <strong>Next.js, React.js y Tailwind CSS<strong> dentro de un monorepo Nx, colaborando mediante flujos de trabajo ágiles de iteración rápida y procesos de CI/CD."
+                "description": "Desarrollo y mantenimiento de landing pages de marketing orientadas a la generación de leads para más de 20 marcas en diferentes sectores. Trabajo tanto en sitios existentes basados en <strong>WordPress/PHP</strong> como en aplicaciones modernas construidas con <strong>Next.js, React.js y Tailwind CSS</strong> dentro de un monorepo Nx, colaborando mediante flujos de trabajo ágiles de iteración rápida y procesos de CI/CD."
             },{
                 "id": 2,
                 "education": false,
                 "period": "Febrero 2022 - Abril 2025",
-                "duration": "",
                 "title": "Desarrollador Odoo Fullstack",
                 "subtitle": "Toh Soluciones Digitales",
-                "description": "Desarrollador Odoo especializado en la creación de soluciones ERP personalizadas y sistemas orientados a las necesidades de negocio utilizando <strong>Python, Javascprit, Bootstrap CSS y XML/HTML</strong>. Gestioné el desarrollo de módulos en áreas de negocio clave como <strong>CRM, Ventas, Inventario, Contabilidad, E-commerce</strong>, además participar en consultoría técnica con clientes, levantamiento de requerimientos e <strong>integración de APIs<strong>."
+                "description": "Desarrollador Odoo especializado en la creación de soluciones ERP personalizadas y sistemas orientados a las necesidades de negocio utilizando <strong>Python, JavaScript, Bootstrap CSS y XML/HTML</strong>. Gestioné el desarrollo de módulos en áreas de negocio clave como <strong>CRM, Ventas, Inventario, Contabilidad, E-commerce</strong>, además participar en consultoría técnica con clientes, levantamiento de requerimientos e <strong>integración de APIs</strong>."
             },{
                 "id": 1,
                 "education": true,
                 "period": "Agosto 2017 - Enero 2022",
-                "duration": "4 años y medio",
                 "title": "Ingeniería en Sistemas Computacionales",
                 "subtitle": "TECNM Campus Motul",
-                "description": "Graduado como Ingeniero en Sistemas Computacionales, con formación enfocada en el desarrollo de software y tecnologías web.",
-                "links": [
-                    "https://github.com/heberth-uh/lagranjita",
-                    "https://apps.odoo.com/apps/modules/14.0/toh_admin_proyecto/"
-                ]
+                "description": "Graduado como Ingeniero en Sistemas Computacionales, con formación enfocada en el desarrollo de software y tecnologías web."
             }
         ]
     },
@@ -57,7 +52,7 @@
         "btnCode": "Código",
         "customerPaymentManager": {
             "title": "Gestor de pagos",
-            "description": "Aplicación de gestión de pagos para administrar clientes, dar seguimiento a saldos pendientes y olrganizar registros de pago. Actualmente en desarrollo, con funcionalidades adicionales por implementar."
+            "description": "Aplicación de gestión de pagos para administrar clientes, dar seguimiento a saldos pendientes y organizar registros de pago. Actualmente en desarrollo, con funcionalidades adicionales por implementar."
         },
         "openpayPayment": {
             "title": "Método de pago Openpay",
@@ -75,11 +70,6 @@
             "title": "CRUD básico con AWS Lambda",
             "description": "Una API CRUD serverless construida utilizando AWS Lambda, DynamoDB y Serverless Framework para demostrar el desarrollo backend nativo en la nube y la gestión de recursos sin servidor.",
             "url": "https://github.com/heberth-uh/basic-aws-lamdba-crud"
-        },
-        "quickNotes": {
-            "title": "Quick Notes (Lista de tareas)",
-            "description": "Aplicación web de gestión de tareas full-stack desarrollada con Node.js, Express.js, React.js y MySQL. Cuenta con operaciones CRUD y actualización de estado en tiempo real para organizar notas y tareas de manera eficiente.",
-            "url": "https://github.com/heberth-uh/football-club"
         },
         "tripAdvisor": {
             "title": "Trip Advisor",

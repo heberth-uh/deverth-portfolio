@@ -8,12 +8,14 @@
     },
     "about": {
         "title": "About me",
-        "subtitle": "Know more <1/><2>about me</2>",
+        "subtitle": "Know more <1>about me</1>",
         "content": "I am a programmer who combines strong expertise in modern <1>front-end</1> technologies with solid <1>back-end</1> capabilities. I enjoy taking on new technical challenges that put my capabilities into practice, allowing me to build robust web solutions, automate workflows, and deliver seamless user experiences.<br/><br/>Experienced in developing and maintaining diverse digital products across collaborative environments, with a strong focus on modern web ecosystems, <1>AI-assisted</1> workflows, and <1>automation</1>. Always eager to explore new domains, adapt to different business needs, and expand my technical stack."
     },
     "skills": {
         "title": "Skills",
-        "sections": {
+        "groups": {
+            "frontend": "Front-end",
+            "backend": "Back-end",
             "other": "Other skills"
         }
     },
@@ -25,7 +27,6 @@
                 "id": 3,
                 "education": false,
                 "period": "April 2025 - Present",
-                "duration": "",
                 "title": "Software Engineer",
                 "subtitle": "Think Future Technologies",
                 "description": "Develop and maintain performance marketing landing pages across 20+ brands and verticals. Work across both legacy <strong>WordPress/PHP</strong> sites and modern campaign applications built with <strong>Next.js, React.js, Tailwind CSS, and Nx monorepo</strong>, collaborating through fast-iteration CI/CD and agile workflows."
@@ -33,7 +34,6 @@
                 "id": 2,
                 "education": false,
                 "period": "February 2022 - April 2025",
-                "duration": "",
                 "title": "Fullstack Odoo Developer",
                 "subtitle": "Toh Soluciones Digitales",
                 "description": "Odoo developer specialized in building custom ERP and business-oriented solutions using <strong>Python, JavaScript, Bootstrap CSS, and XML/HTML</strong>. Managed module development across core business domains (<strong>CRM, Sales, Inventory, Accounting, E-commerce</strong>) alongside client-facing technical consulting, requirements gathering and <strong>API integrations</strong>."
@@ -41,14 +41,9 @@
                 "id": 1,
                 "education": true,
                 "period": "August 2017 - January 2022",
-                "duration": "",
                 "title": "Computer Science Engineering",
                 "subtitle": "TECNM Campus Motul",
-                "description": "Graduated with a Bachelor's Degree in <strong>Computer Science Engineering</strong>, with a focus on software and web development.",
-                "links": [
-                    "https://github.com/heberth-uh/lagranjita",
-                    "https://apps.odoo.com/apps/modules/14.0/toh_admin_proyecto/"
-                ]
+                "description": "Graduated with a Bachelor's Degree in <strong>Computer Science Engineering</strong>, with a focus on software and web development."
             }
         ]
     },
@@ -69,15 +64,11 @@
         },
         "zWatches": {
             "title": "ZWatches - Product Management",
-            "description": "A product management application built with Next.js and MongoDB, implementing. CRUD operations for a watch catalog and image management through Cloudinary."
+            "description": "A product management application built with Next.js and MongoDB, implementing CRUD operations for a watch catalog and image management through Cloudinary."
         },
         "awsLambaCrud": {
             "title": "Basic AWS Lambda CRUD",
             "description": "A serverless CRUD REST API built using AWS Lambda, DynamoDB, and the Serverless Framework to demonstrate cloud-native backend development and serverless resource management."
-        },
-        "quickNotes": {
-            "title": "Quick Notes (To-Do list)",
-            "description": "A full-stack task management applicatoin built with Node.js, Express.js, React.js, and MySQL. Features real-time state updates and CRUD operations for organizing daily notes and tasks efficiently."
         },
         "tripAdvisor": {
             "title": "Trip Advisor",
