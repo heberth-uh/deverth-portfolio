@@ -3,11 +3,12 @@ import { useTranslation } from "react-i18next";
 import SectionLabel from "../../ui/SectionLabel/SectionLabel";
 import ItemExperience from "../../ui/ItemExperience/ItemExperience";
 
-import fourSecurityLogo from "../../../../public/images/companies/4security-white.png";
-import simecLogo from "../../../../public/images/companies/simec-white.png";
-import saintGobainLogo from "../../../../public/images/companies/saint-gobain-white.png";
-
 import "./Experience.scss";
+
+// Images
+const fourSecurityLogo = "/images/companies/4security-white.png";
+const simecLogo = "/images/companies/simec-white.png";
+const saintGobainLogo = "/images/companies/saint-gobain-white.png";
 
 const companies = [
   { name: "4Security", logo: fourSecurityLogo },

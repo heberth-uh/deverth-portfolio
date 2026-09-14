@@ -6,9 +6,10 @@ import ToggleTheme from "../../ui/ToggleTheme/ToggleTheme";
 import ToggleLang from "../../ui/ToggleLang/ToggleLang";
 // Icons
 import { FiMenu, FiX } from "react-icons/fi";
+
 // SVG
-import deverth from "../../../../public/Deverth.svg";
-import deverthDark from "../../../../public/Deverth-dark.svg";
+const deverth = "/Deverth.svg";
+const deverthDark = "/Deverth-dark.svg";
 
 import "./Header.scss";
 
