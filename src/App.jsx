@@ -1,31 +1,33 @@
-import './App.css'
-import Header from './components/sections/Header'
-import Hero from './components/sections/Hero'
-import About from './components/sections/About'
-import Experience from './components/sections/Experience'
-import Projects from './components/sections/Projects'
-import Skills from './components/sections/Skills'
-import Footer from './components/sections/Footer'
+import { useContext } from "react";
+import { Context } from "./context/Context";
+import Header from "./components/sections/Header/Header";
+import Hero from "./components/sections/Hero/Hero";
+import About from "./components/sections/About/About";
+import Experience from "./components/sections/Experience/Experience";
+import Projects from "./components/sections/Projects/Projects";
+import Skills from "./components/sections/Skills/Skills";
+import Footer from "./components/sections/Footer/Footer";
 
 function App() {
+  const { theme } = useContext(Context);
 
-  if (localStorage.theme == 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.documentElement.classList.add('dark')
+  if (theme === "dark") {
+    document.documentElement.classList.add("dark");
   } else {
-    document.documentElement.classList.remove('dark')
+    document.documentElement.classList.remove("dark");
   }
 
   return (
-    <div className=''>
-        <Header/>
-        <Hero/>
-        <About/>
-        <Experience/>
-        <Projects/>
-        <Skills/>
-        <Footer/>
+    <div>
+      <Header />
+      <Hero />
+      <About />
+      <Experience />
+      <Projects />
+      <Skills />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,21 @@
+// Breakpoints + mixins for media queries = compile-time, so use @use this partial where needed
+//
+// Keep in sync with tailwind.config.js (screens), so a
+// Tailwind `md:` and an `@include up=tablet` agree on the same breakpoint.
+
+$bp-tablet: 768px; // tailwind `md`
+$bp-desktop: 1024px; // tailwind `lg`
+
+// Shortcuts mobile-first: @include up-tablet { ... } instead of
+// @media (min-width: $pb-tablet) { ... }
+@mixin up-tablet {
+  @media (min-width: $bp-tablet) {
+    @content;
+  }
+}
+
+@mixin up-desktop {
+  @media (min-width: $bp-desktop) {
+    @content;
+  }
+}

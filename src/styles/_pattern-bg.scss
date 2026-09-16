@@ -1,0 +1,16 @@
+// Pattern background. Use @include pattern-bg; in the selector that will be
+// the background layer, just need to make sure the parent has position:relative.
+// The fade (top/bottom gradient) is bespoke per section.
+
+@mixin pattern-bg {
+  position: absolute;
+  inset: 0;
+  background-repeat: repeat;
+  background-size: 32px 32px;
+  // light (default)
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M8 20h8M20 8v8' stroke='rgba(0,0,0,0.06)' stroke-width='1' stroke-linecap='square'/%3E%3C/svg%3E");
+
+  .dark & {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M8 20h8M20 8v8' stroke='rgba(255,255,255,0.07)' stroke-width='1' stroke-linecap='square'/%3E%3C/svg%3E");
+  }
+}

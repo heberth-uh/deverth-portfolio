@@ -1,0 +1,126 @@
+@use "../../../styles/breakpoints" as *;
+
+.footer {
+  background: var(--color-bg-alt);
+  border-top: 1px solid var(--color-border);
+
+  // .footer__inner
+  &__inner {
+    @apply flex flex-col;
+    padding-top: 44px;
+    padding-bottom: 28px;
+    gap: 32px;
+
+    @include up-tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 56px;
+      padding-bottom: 32px;
+      gap: 40px;
+    }
+
+    @include up-desktop {
+      @apply flex-row justify-between;
+      padding-top: 64px;
+      padding-bottom: 36px;
+    }
+  }
+
+  // .footer__brand
+  &__brand {
+    @apply flex flex-col;
+    gap: 16px;
+  }
+
+  // .footer__logo
+  &__logo {
+    display: block;
+
+    img {
+      height: 24px;
+
+      @include up-tablet {
+        height: 30px;
+      }
+
+      @include up-desktop {
+        height: 36px;
+      }
+    }
+  }
+
+  // .footer__copyright
+  &__copyright {
+    @apply font-code;
+    font-size: 10.5px;
+    color: var(--color-fg-tertiary);
+
+    @include up-tablet {
+      font-size: 11px;
+    }
+
+    @include up-desktop {
+      font-size: 12px;
+    }
+  }
+
+  // .footer__columns
+  &__columns {
+    @apply flex;
+    gap: 40px;
+
+    @include up-tablet {
+      gap: 56px;
+    }
+
+    @include up-desktop {
+      gap: 80px;
+    }
+  }
+
+  // .footer__column
+  &__column {
+    @apply flex flex-col;
+    gap: 12px;
+  }
+
+  // .footer__column-label
+  &__column-label {
+    @apply font-code;
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-fg-tertiary);
+
+    @include up-tablet {
+      font-size: 11.5px;
+      letter-spacing: 0.12em;
+    }
+  }
+
+  // .footer__links
+  &__links {
+    @apply flex flex-col;
+    gap: 8px;
+  }
+
+  // .footer__link
+  &__link {
+    @apply flex items-center gap-2 font-plex;
+    font-size: 12.5px;
+    color: var(--color-fg-secondary);
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: var(--color-fg);
+    }
+
+    @include up-tablet {
+      font-size: 13.5px;
+    }
+
+    @include up-desktop {
+      font-size: 14px;
+    }
+  }
+}

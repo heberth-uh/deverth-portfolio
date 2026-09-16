@@ -1,0 +1,154 @@
+@use "../../../styles/breakpoints" as *;
+
+.item-experience {
+  position: relative;
+  list-style: none;
+  padding-left: 38px; // dot (22px) + 16px of space
+  padding-bottom: 48px;
+
+  @include up-tablet {
+    padding-left: 42px; // dot (24px) + 18px
+    padding-bottom: 56px;
+  }
+
+  @include up-desktop {
+    padding-left: 46px; // dot (26px) + 20px
+    padding-bottom: 64px;
+  }
+
+  // line that connects this item with the next one - centered under the dot
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 11px; // dot-size/2, mobile (22/2)
+    width: 1px;
+    background: var(--color-border);
+
+    @include up-tablet {
+      left: 12px; // 24/2
+    }
+
+    @include up-desktop {
+      left: 13px; // 26/2
+    }
+  }
+
+  // the last real item in the list: no line dangling below
+  &:last-child {
+    padding-bottom: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  // .item-experience__dot
+  &__dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-border-strong);
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-size: 12px;
+
+    @include up-tablet {
+      width: 24px;
+      height: 24px;
+      font-size: 13px;
+    }
+
+    @include up-desktop {
+      width: 26px;
+      height: 26px;
+      font-size: 14px;
+    }
+  }
+
+  // .item-experience__period
+  &__period {
+    @apply font-code;
+    font-size: 10.5px;
+    color: var(--color-fg-tertiary);
+    margin-bottom: 6px;
+
+    @include up-tablet {
+      font-size: 11.5px;
+      margin-bottom: 7px;
+    }
+
+    @include up-desktop {
+      font-size: 12.5px;
+      margin-bottom: 8px;
+    }
+  }
+
+  // .item-experience__title
+  &__title {
+    @apply font-display font-semibold;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 15px;
+    color: var(--color-fg);
+    margin: 0 0 8px;
+
+    @include up-tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 8px;
+      font-size: 17px;
+      margin-bottom: 4px;
+    }
+
+    @include up-desktop {
+      gap: 10px;
+      font-size: 19px;
+    }
+  }
+
+  // .item-experience__subtitle
+  &__subtitle {
+    @apply font-plex font-medium;
+    color: var(--color-fg-secondary);
+    font-size: 12.5px;
+
+    @include up-tablet {
+      font-size: 14.5px;
+    }
+
+    @include up-desktop {
+      font-size: 16px;
+    }
+  }
+
+  // .item-experience__description
+  &__description {
+    @apply font-plex font-light;
+    font-size: 12.5px;
+    line-height: 1.75;
+    color: var(--color-fg-secondary);
+
+    @include up-tablet {
+      font-size: 14px;
+    }
+
+    @include up-desktop {
+      font-size: 16px;
+    }
+  }
+
+  // .item-experience__emphasis
+  &__emphasis {
+    color: var(--color-fg-secondary);
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,49 @@
+@use "../../../styles/breakpoints" as *;
+
+.skills {
+  background: var(--color-bg);
+  padding: 56px 0;
+
+  @include up-tablet {
+    padding: 80px 0;
+  }
+
+  @include up-desktop {
+    padding: 110px 0;
+  }
+
+  // .skills__wrapper
+  &__wrapper {
+    @apply flex flex-col gap-9 md:gap-11 lg:gap-14;
+  }
+
+  // .skills__group
+  &__group {
+    @apply flex flex-col gap-4 lg:gap-6;
+
+    // .skills__group-title
+    &-name {
+      @apply font-code;
+      font-size: 12px;
+      color: var(--color-fg-tertiary);
+      text-transform: uppercase;
+
+      @include up-tablet {
+        font-size: 14px;
+      }
+    }
+  }
+
+  // .skills__grid
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+
+    @include up-tablet {
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      width: fit-content;
+    }
+  }
+}

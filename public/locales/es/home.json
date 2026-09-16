@@ -1,23 +1,22 @@
 {
     "hero": {
         "subtitle": "Hola, mi nombre es",
-        "title": "Heberth,<br/><1>desarrollador</1><br/>web front-end<br/>",
-        "description": "Ingeniero en sistemas computacionales,<br/>apasionado por la creación y diseño<br/> de sitios web geniales.",
+        "title": "<1>Heberth Uh</1>,<br/>Website Developer",
+        "description": "Soy Ingeniero en Sistemas Computacionales con más de 5 años de experiencia en desarrollo de software, especializado en crear aplicaciones web interactivas, únicas y fáciles de usar que impulsan soluciones digitales modernas.",
         "button_contact": "Envíame un correo",
         "button_start": "¡Empecemos!"
     },
     "about": {
-        "title": "Sobre mi",
-        "subtitle": "Conoce más <1/><2>sobre mí</2>",
-        "content": "Programador apasionado por la creación de sitios web en el lado del <1>front-end</1> y con conocimiento sólido en el <2>back-end</2>. Soy un desarrollador autodidacta en constante aprendizaje sobre las nuevas tecnologías y amante del <3>diseño</3> y maquetado de interfaces.<br/><br/>Me gusta tomar nuevos retos y poner en práctica mis capacidades a la vez de aprender más cosas y adquirir nuevas aptitudes."
+        "title": "Sobre mí",
+        "subtitle": "Conoce más <1>sobre mí</1>",
+        "content": "Soy un programador y combino una sólida experiencia en tecnologías <1>front-end</1> modernas con amplios conocimientos en <1>back-end</1>. Me gusta asumir nuevos retos que permitan poner mis capacidades en práctica, construir soluciones web modernas, automatizar flujos de trabajo y ofrecer experiencias de usuario fluidas.<br/><br/>Cuento con experiencia en el desarrollo y mantenimiento de diversos productos digitales en entornos colaborativos, con un fuerte enfoque en tecnologías web modernas, flujos de trabajo <1>asistidos por IA</1> y <1>automatización</1>. Siempre estoy dispuesto a explorar nuevos ámbitos, adaptarme a diferentes necesidades de negocio y ampliar mi stack tecnológico."
     },
     "skills": {
         "title": "Habilidades",
-        "sections": {
-            "other": "Otras habilidades"
-        },
-        "skills": {
-            "responsive": "Diseño adaptable"
+        "groups": {
+            "frontend": "Front-end",
+            "backend": "Back-end",
+            "other": "Other skills"
         }
     },
     "experience": {
@@ -25,44 +24,56 @@
         "companies": "Empresas a las que les he añadido valor",
         "experiences": [
             {
-                "id": 1,
+                "id": 3,
                 "education": false,
-                "period": "Marzo 2022 - Actualidad",
-                "duration": "",
-                "title": "Desarrollador Odoo Fullstack",
-                "subtitle": "Toh Soluciones Digitales",
-                "description": "Desarrollador Odoo especializado en la creación de sistemas personalizados para empresas que optan por utilizar (o ya utilizan) Odoo como su solución ERP. Desarrollo de módulos utilizando <strong>Python, Javascprit, Bootstrap CSS y XML/HTML</strong> para el diseño de la lógica de negocio de las empresas, <strong>integración de APIS</strong>, <strong>creación de Landing Pages</strong> y diseño/rediseño de la interfaz gráfica de Odoo."
+                "period": "Abril 2025 - Presente",
+                "title": "Software Engineer",
+                "subtitle": "Think Future Technologies",
+                "description": "Desarrollo y mantenimiento de landing pages de marketing orientadas a la generación de leads para más de 20 marcas en diferentes sectores. Trabajo tanto en sitios existentes basados en <strong>WordPress/PHP</strong> como en aplicaciones modernas construidas con <strong>Next.js, React.js y Tailwind CSS</strong> dentro de un monorepo Nx, colaborando mediante flujos de trabajo ágiles de iteración rápida y procesos de CI/CD."
             },{
                 "id": 2,
+                "education": false,
+                "period": "Febrero 2022 - Abril 2025",
+                "title": "Desarrollador Odoo Fullstack",
+                "subtitle": "Toh Soluciones Digitales",
+                "description": "Desarrollador Odoo especializado en la creación de soluciones ERP personalizadas y sistemas orientados a las necesidades de negocio utilizando <strong>Python, JavaScript, Bootstrap CSS y XML/HTML</strong>. Gestioné el desarrollo de módulos en áreas de negocio clave como <strong>CRM, Ventas, Inventario, Contabilidad, E-commerce</strong>, además participar en consultoría técnica con clientes, levantamiento de requerimientos e <strong>integración de APIs</strong>."
+            },{
+                "id": 1,
                 "education": true,
                 "period": "Agosto 2017 - Enero 2022",
-                "duration": "4 años y medio",
                 "title": "Ingeniería en Sistemas Computacionales",
                 "subtitle": "TECNM Campus Motul",
-                "description": "Graduado y titulado como Ingeniero en Sistemas computacionales. En mi trayecto como estudiante fui parte de proyectos relevantes como <a1>Punto de venta LaGranjita</a1> donde puse en práctica la <strong>programación web</strong>. Realicé mi <strong>residencia profesional</strong> en la empresa Toh Soluciones Digitales bajo el proyecto <a2>\"Dashboard de Administración de Proyectos\"</a2>, donde después de 5 meses de prácticas, fui contratado.",
-                "links": [
-                    "https://github.com/heberth-uh/lagranjita",
-                    "https://apps.odoo.com/apps/modules/14.0/toh_admin_proyecto/"
-                ]
+                "description": "Graduado como Ingeniero en Sistemas Computacionales, con formación enfocada en el desarrollo de software y tecnologías web."
             }
         ]
     },
     "projects": {
         "title": "PROYECTOS",
         "btnCode": "Código",
-        "footballClub": {
-            "title": "Landing Page de Club de Fútbol",
-            "description": "Una plantilla para organizar la información de tu equipo de fútbol para mostrar los partidos siguientes, tabla de posiciones, plantilla de jugadores, etc.",
-            "url": "https://github.com/heberth-uh/football-club"
+        "customerPaymentManager": {
+            "title": "Gestor de pagos",
+            "description": "Aplicación de gestión de pagos para administrar clientes, dar seguimiento a saldos pendientes y organizar registros de pago. Actualmente en desarrollo, con funcionalidades adicionales por implementar."
         },
-        "quickNotes": {
-            "title": "Quick Notes (Lista de tareas)",
-            "description": "Un sitio web simple de lista de tareas creado usando el stack MERN con MySQL. Permite a los usuarios crear, actualizar y eliminar tareas o notas, además de marcarlas como hechas en cualquier momento.",
-            "url": "https://github.com/heberth-uh/football-club"
+        "openpayPayment": {
+            "title": "Método de pago Openpay",
+            "description": "Integración de la pasarela de pagos Openpay para e-commerce de Odoo, con soporte para tarjetas de crédito y débito, transferencias bancarias, pagos a meses sin intereses, 3D Secure y seguimiento del estado de pagos."
+        },
+        "conektaPayment": {
+            "title": "Método de pago Conekta",
+            "description": "Integración de Conekta como proveedor de pagos para Odoo, permitiendo realizar pagos de e-commerce mediante tarjetas de crédito y débito, efectivo y transferencias bancarias, con actualización del estado de pagos mediante webhooks."
+        },
+        "zWatches": {
+            "title": "ZWatches - Gestor de productos",
+            "description": "Aplicación de gestión de productos construída con Next.js y MongoDB, que implementa operaciones CRUD para un catálogo de relojes y gestión de imágenes mediante Cloudinary."
+        },
+        "awsLambaCrud": {
+            "title": "CRUD básico con AWS Lambda",
+            "description": "Una API CRUD serverless construida utilizando AWS Lambda, DynamoDB y Serverless Framework para demostrar el desarrollo backend nativo en la nube y la gestión de recursos sin servidor.",
+            "url": "https://github.com/heberth-uh/basic-aws-lamdba-crud"
         },
         "tripAdvisor": {
             "title": "Trip Advisor",
-            "description": "Un sitio donde podrás encontrar cualquier lugar del mundo y consultar precios de puntos interesantes, atracciones o restaurantes.",
+            "description": "Sitio web para descubrir destinos, atracciones, restaurantes, hoteles y otros puntos de interés alrededor del mundo mediante la API de Travel Advisor",
             "url": "https://github.com/heberth-uh/trip-adivisor"
         }
     }

@@ -1,27 +1,35 @@
 {
-    "navbar": [
-        {
-            "id": 1,
-            "name": "Sobre mí",
-            "target": "#about_section"
-        },{
-            "id": 2,
-            "name": "Experiencia",
-            "target": "#experience_section"
-        },{
-            "id": 3,
-            "name": "Proyectos",
-            "target": "#projects_section"
-        }
-    ],
-    "theme": {
-        "dark": "Oscuro",
-        "light": "Claro",
-        "system": "Sistema"
+  "navbar": [
+    {
+      "id": 1,
+      "name": "Sobre mí",
+      "target": "#about_section"
     },
-    "language": {
-        "en": "Inglés",
-        "es": "Español"
+    {
+      "id": 2,
+      "name": "Experiencia",
+      "target": "#experience_section"
     },
-    "preview": "Visitar sitio web"
+    {
+      "id": 3,
+      "name": "Proyectos",
+      "target": "#projects_section"
+    },
+    {
+      "id": 4,
+      "name": "Habilidades",
+      "target": "#skills_section"
+    }
+  ],
+  "navbar_toggle": "Abrir/cerrar menú",
+  "link_home": "Ir al inicio",
+  "theme": {
+    "dark": "Oscuro",
+    "light": "Claro"
+  },
+  "language": {
+    "en": "Inglés",
+    "es": "Español"
+  },
+  "preview": "Visitar sitio web"
 }

@@ -1,0 +1,25 @@
+@use "../../../styles/breakpoints" as *;
+
+.toggle-lang {
+  @apply flex items-center;
+  border: 1px solid var(--color-border-strong);
+
+  // .toggle-lang__lang
+  &__lang {
+    width: 48px;
+    height: 36px;
+    color: var(--color-fg-tertiary);
+    font-size: 12px;
+    transition: background-color 0.15s ease, color 0.15s ease;
+
+    &:focus {
+      outline: none;
+    }
+
+    // .toggle-lang__lang--active
+    &--active {
+      color: var(--color-fg);
+      background: var(--color-surface-2);
+    }
+  }
+}

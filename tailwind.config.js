@@ -6,29 +6,30 @@ export default {
         "./src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
+        container: {
+            screens: {
+                md: '768px',
+                lg: '1024px',
+            },
+        },
         extend: {
             colors: {
-                'content-blue': '#022F42',
-                'dark-blue': '#021323',
-                'darker-blue': '#020C18',
-                'sky-blue': '#15C7FF',
+                bg: 'var(--color-bg)',
+                'bg-alt': 'var(--color-bg-alt)',
+                surface: 'var(--color-surface)',
+                'surface-2': 'var(--color-surface-2)',
+                border: 'var(--color-border)',
+                'border-strong': 'var(--color-border-strong)',
+                fg: 'var(--color-fg)',
+                'fg-secondary': 'var(--color-fg-secondary)',
+                'fg-tertiary': 'var(--color-fg-tertiary)',
+                'fg-faint': 'var(--color-fg-faint)',
             },
             fontFamily: {
-                body: ['Poppins', 'sans-serif']
+                display: ['"Space Grotesk"', 'sans-serif'],
+                plex: ['"IBM Plex Sans"', 'sans-serif'],
+                code: ['"IBM Plex Mono"', 'monospace'],
             },
-            dropShadow: {
-                '4xl': [
-                    '0 35px 35px rgba(0, 0, 0, 0.25)',
-                    '0 45px 65px rgba(0, 0, 0, 0.15)'
-                ]
-            },
-            backgroundImage: {
-                'hero-pattern': 'url("/public/images/squares-pattern.svg")',
-                'hero-pattern-dark': 'url("/public/images/squares-pattern-dark.svg")',
-            },
-            backgroundSize: {
-                'y-middle': '100% 50%',
-            }
         }
     },
     plugins: [],

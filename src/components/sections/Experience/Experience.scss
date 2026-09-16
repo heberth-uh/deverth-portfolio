@@ -1,0 +1,116 @@
+@use "../../../styles/breakpoints" as *;
+@use "../../../styles/pattern-bg" as *;
+
+.experience {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-bg);
+
+  // .experience__pattern
+  &__pattern {
+    @include pattern-bg;
+  }
+
+  // .experience__fade
+  &__fade {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      var(--color-bg) 0%,
+      transparent 12%,
+      transparent 88%,
+      var(--color-bg) 100%
+    );
+  }
+
+  // .experience__inner
+  &__inner {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 48px;
+
+    @include up-tablet {
+      padding-top: 80px;
+      padding-bottom: 64px;
+    }
+
+    @include up-desktop {
+      padding-top: 112px;
+      padding-bottom: 80px;
+    }
+  }
+
+  // .experience__timeline
+  &__timeline {
+    list-style: none;
+    margin: 0 0 40px;
+    padding: 0;
+
+    @include up-tablet {
+      margin-bottom: 52px;
+    }
+
+    @include up-desktop {
+      max-width: 830px;
+      margin-bottom: 82px;
+    }
+  }
+
+  // .experience__companies-label
+  &__companies-label {
+    @apply font-code;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--color-fg-tertiary);
+    margin-bottom: 18px;
+
+    @include up-tablet {
+      font-size: 12px;
+      margin-bottom: 24px;
+    }
+
+    @include up-desktop {
+      font-size: 14px;
+      margin-bottom: 28px;
+    }
+  }
+
+  // .experience__companies
+  &__companies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 28px;
+
+    @include up-tablet {
+      gap: 40px;
+    }
+
+    @include up-desktop {
+      gap: 56px;
+    }
+  }
+
+  &__company-logo {
+    height: 24px;
+    width: auto;
+    opacity: 0.55;
+    filter: grayscale(1) invert(1); // light (default)
+
+    .dark & {
+      filter: none; // already white, no need to invert
+    }
+
+    @include up-tablet {
+      height: 32px;
+    }
+
+    @include up-desktop {
+      height: 40px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@use "../../../styles//breakpoints" as *;
+
+.toggle-theme {
+  @apply flex items-center;
+  border: 1px solid var(--color-border-strong);
+  
+  &:hover, &:focus {
+    outline: none;
+    border-color: var(--color-border-strong);
+  }
+
+  // .toggle-theme__mode
+  &__mode {
+    @apply flex justify-center items-center;
+    width: 42px;
+    height: 36px;
+    color: var(--color-fg);
+    font-size: 18px;
+  }
+}

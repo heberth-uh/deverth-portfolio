@@ -1,0 +1,36 @@
+@use "../../../styles/breakpoints" as *;
+
+.project {
+  background: var(--color-bg-alt);
+
+  // .project__inner
+  &__inner {
+    padding-block: 60px;
+
+    @include up-tablet {
+      padding-top: 80px;
+      padding-bottom: 88px;
+    }
+
+    @include up-desktop {
+      padding-top: 112px;
+      padding-bottom: 120px;
+    }
+  }
+
+  // .project__grid
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    @include up-tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    @include up-desktop {
+      gap: 26px;
+    }
+  }
+}

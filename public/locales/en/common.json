@@ -1,27 +1,35 @@
 {
-    "navbar": [
-        {
-            "id": 1,
-            "name": "About",
-            "target": "#about_section"
-        },{
-            "id": 2,
-            "name": "Experience",
-            "target": "#experience_section"
-        },{
-            "id": 3,
-            "name": "Projects",
-            "target": "#projects_section"
-        }
-    ],
-    "theme": {
-        "dark": "Dark",
-        "light": "Light",
-        "system": "System"
+  "navbar": [
+    {
+      "id": 1,
+      "name": "About",
+      "target": "#about_section"
     },
-    "language": {
-        "en": "English",
-        "es": "Spanish"
+    {
+      "id": 2,
+      "name": "Experience",
+      "target": "#experience_section"
     },
-    "preview": "Visit website"
+    {
+      "id": 3,
+      "name": "Projects",
+      "target": "#projects_section"
+    },
+    {
+      "id": 4,
+      "name": "Skills",
+      "target": "#skills_section"
+    }
+  ],
+  "navbar_toggle": "Toggle menu",
+  "link_home": "Go to home",
+  "theme": {
+    "dark": "Dark",
+    "light": "Light"
+  },
+  "language": {
+    "en": "English",
+    "es": "Spanish"
+  },
+  "preview": "Visit website"
 }
