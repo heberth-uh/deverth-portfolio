@@ -9,7 +9,7 @@ import "./config/i18n.js";
 import { AiOutlineLoading } from "react-icons/ai";
 
 export const Loader = () => (
-  <div className="h-svh flex justify-center items-center">
+  <div className="h-svh flex justify-center items-center bg-[var(--color-bg)] text-[var(--color-fg)]">
     <span className="text-center">
       <AiOutlineLoading className="mx-auto animate-spin duration-75" />
       <div>loading...</div>

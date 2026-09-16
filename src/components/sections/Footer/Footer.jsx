@@ -2,10 +2,12 @@ import { useContext } from "react";
 import { useTranslation } from "react-i18next";
 import { Context } from "../../../context/Context";
 import { GrLinkedin, GrGithub } from "react-icons/gr";
-import deverth from "../../../../public/Deverth.svg";
-import deverthDark from "../../../../public/Deverth-dark.svg";
 
 import "./Footer.scss";
+
+// SVG
+const deverth = "/Deverth.svg";
+const deverthDark = "/Deverth-dark.svg";
 
 function Footer() {
   const { t } = useTranslation(["common", "footer"]);
